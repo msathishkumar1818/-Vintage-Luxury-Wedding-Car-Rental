@@ -1,0 +1,415 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/images/brand/favicon-32x32.png?v=5.0">
+  <link rel="icon" type="image/png" sizes="64x64" href="assets/images/brand/favicon.png?v=5.0">
+  <link rel="shortcut icon" href="assets/images/brand/favicon.ico?v=5.0">
+  <link rel="apple-touch-icon" href="assets/images/brand/apple-touch-icon.png?v=5.0">
+  <title>Sign In — Vintage &amp; Luxury Wedding Car Rental</title>
+  <meta name="description" content="Sign in to reserve your dream vintage wedding motorcar." />
+  <meta name="robots" content="noindex, nofollow" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;600;700&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    :root {
+      --gold: #D4AF37; --gold-light: #F3D068; --gold-dark: #AA820A;
+      --gold-border: rgba(212,175,55,0.30); --gold-border-hi: rgba(212,175,55,0.70);
+      --fn-serif: 'Cinzel', Georgia, serif;
+      --fn-sans: 'Plus Jakarta Sans', sans-serif;
+      --ease: cubic-bezier(0.16,1,0.3,1);
+    }
+    html, body { height: 100%; font-family: var(--fn-sans); -webkit-font-smoothing: antialiased; overflow: hidden; }
+    a { color: inherit; text-decoration: none; }
+    button { font-family: inherit; cursor: pointer; border: none; background: none; }
+
+    /* SPLIT LAYOUT */
+    .wrap { display: flex; height: 100dvh; }
+
+    /* LEFT PANEL */
+    .lp {
+      flex: 0 0 42%; display: none; flex-direction: column;
+      justify-content: space-between; position: relative; overflow: hidden;
+      padding: 2.5rem 2.2rem;
+      background: linear-gradient(160deg, #0c0900 0%, #080600 50%, #050400 100%);
+    }
+    @media(min-width:860px){ .lp { display: flex; } }
+    .lp::before {
+      content:''; position:absolute; width:500px; height:500px; border-radius:50%;
+      background:radial-gradient(circle,rgba(212,175,55,0.11) 0%,transparent 70%);
+      top:30%; left:50%; transform:translate(-50%,-50%); pointer-events:none;
+    }
+    .lp::after {
+      content:''; position:absolute; inset:0;
+      background:linear-gradient(to bottom,transparent 60%,rgba(0,0,0,0.6) 100%);
+      pointer-events:none;
+    }
+    .lp-logo { position:relative; z-index:10; display:flex; align-items:center; gap:.65rem; text-decoration:none; cursor:pointer; transition:opacity .2s; }
+    .lp-logo:hover { opacity: .88; }
+    .lp-logo-ring {
+      width: 46px; height: 46px; border-radius: 50%;
+      border: 1.5px solid var(--gold-border-hi);
+      background: radial-gradient(circle, rgba(212,175,55,0.18) 0%, transparent 80%);
+      display: flex; align-items: center; justify-content: center; flex-shrink: 0;
+      overflow: hidden; padding: 2px;
+    }
+    .lp-logo-img { width: 100%; height: 100%; object-fit: contain; display: block; }
+    .lp-brand-text { display: flex; flex-direction: column; }
+    .lp-brand-name { font-family: var(--fn-serif); font-size: .72rem; letter-spacing: .2em; color: var(--gold); font-weight: 600; }
+    .lp-brand-name span { font-size: .7rem; }
+    .lp-brand-sub  { font-size: .6rem; letter-spacing: .18em; color: rgba(212,175,55,.5); text-transform: uppercase; margin-top: 1px; }
+
+    /* Right Panel Brand (matches Home 1) */
+    .rp-brand {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.75rem;
+      margin-bottom: 1.25rem;
+      text-decoration: none;
+      cursor: pointer;
+      position: relative;
+      z-index: 10;
+      transition: opacity .2s, transform .2s;
+    }
+    .rp-brand:hover {
+      opacity: .85;
+      transform: translateY(-1px);
+    }
+    .rp-logo-ring {
+      width: 44px; height: 44px; border-radius: 50%;
+      border: 1.5px solid rgba(184, 134, 11, 0.4);
+      background: radial-gradient(circle, rgba(212,175,55,0.12) 0%, transparent 80%);
+      display: flex; align-items: center; justify-content: center; flex-shrink: 0;
+      overflow: hidden; padding: 2px;
+    }
+    .rp-logo-img { width: 100%; height: 100%; object-fit: contain; display: block; }
+    .rp-brand-text { display: flex; flex-direction: column; }
+    .rp-brand-name { font-family: var(--fn-serif); font-size: .78rem; letter-spacing: .18em; color: #1a1208; font-weight: 700; }
+    .rp-brand-name span { color: #8B6914; }
+    .rp-brand-sub  { font-size: .58rem; letter-spacing: .2em; color: #8B6914; text-transform: uppercase; margin-top: 1px; }
+    .lp-main { position:relative; z-index:2; flex:1; display:flex; flex-direction:column; justify-content:center; }
+    .lp-car {
+      width:100%; max-width:340px; margin:0 auto 1.8rem;
+      animation:float 9s ease-in-out infinite;
+      filter:drop-shadow(0 0 40px rgba(212,175,55,0.2)) drop-shadow(0 20px 50px rgba(0,0,0,0.9));
+    }
+    @keyframes float { 0%,100%{transform:translateY(0)} 50%{transform:translateY(-10px)} }
+    .lp-welcome { text-align:center; }
+    .lp-welcome h2 { font-family:var(--fn-serif); font-size:1.3rem; color:#fff; letter-spacing:.05em; margin-bottom:.55rem; }
+    .lp-welcome p  { font-size:.82rem; color:rgba(255,255,255,.5); line-height:1.65; max-width:240px; margin:0 auto; }
+    .lp-badge {
+      position:relative; z-index:2; display:flex; align-items:center; gap:.5rem;
+      font-size:.68rem; color:rgba(212,175,55,.55); letter-spacing:.06em;
+    }
+    .lp-badge svg { width:14px; height:14px; color:rgba(212,175,55,.55); flex-shrink:0; }
+
+    /* RIGHT PANEL */
+    .rp {
+      flex:1 1 auto; display:flex; flex-direction:column;
+      align-items:center; justify-content:center;
+      padding:2rem 1.5rem; position:relative; overflow-y:auto;
+      background:#F5F3EF;
+    }
+
+    .form-box { width:100%; max-width:400px; animation:rise .6s var(--ease) both; }
+    @keyframes rise { from{opacity:0;transform:translateY(18px)} to{opacity:1;transform:none} }
+
+    .acct-badge {
+      display:inline-flex; align-items:center; gap:.4rem;
+      background:rgba(212,175,55,0.12); border:1px solid rgba(212,175,55,0.35);
+      border-radius:999px; padding:.3rem .8rem;
+      font-size:.68rem; font-weight:700; letter-spacing:.12em;
+      color:#8B6914; text-transform:uppercase; margin-bottom:1.1rem;
+    }
+    .acct-badge svg { width:12px; height:12px; color:#8B6914; }
+
+    h1.login-h { font-family:var(--fn-serif); font-size:1.65rem; color:#1a1208; letter-spacing:.03em; margin-bottom:.25rem; }
+    .login-sub { font-size:.82rem; color:#777; margin-bottom:1.6rem; line-height:1.6; }
+    .login-sub a { color:var(--gold-dark); font-weight:500; }
+    .login-sub a:hover { color:var(--gold); }
+
+    .form { display:flex; flex-direction:column; gap:.95rem; }
+    .fld  { display:flex; flex-direction:column; gap:.3rem; }
+    .frow { display:flex; align-items:center; justify-content:space-between; gap:.5rem; }
+    .flabel  { font-size:.73rem; font-weight:600; letter-spacing:.07em; color:#555; text-transform:uppercase; }
+    .fforgot { font-size:.73rem; color:var(--gold-dark); font-weight:500; transition:color .2s; }
+    .fforgot:hover { color:var(--gold); }
+    .fwrap { position:relative; }
+    .finput {
+      width:100%; background:#fff; border:1.5px solid #DDD; border-radius:8px;
+      color:#1a1208; font-size:.9rem; font-family:var(--fn-sans);
+      padding:.75rem 1rem; outline:none;
+      transition:border-color .2s, box-shadow .2s;
+    }
+    .finput::placeholder { color:#AAA; }
+    .finput:focus { border-color:rgba(212,175,55,.7); box-shadow:0 0 0 3px rgba(212,175,55,.12); }
+    .ftoggle {
+      position:absolute; right:.9rem; top:50%; transform:translateY(-50%);
+      color:#999; background:none; border:none; display:flex; padding:0; cursor:pointer; transition:color .2s;
+    }
+    .ftoggle:hover { color:var(--gold-dark); }
+    .ferr { font-size:.71rem; color:#e53e3e; display:none; }
+    .fld.err .finput { border-color:rgba(229,62,62,.6); }
+    .fld.err .ferr   { display:block; }
+
+    .check-row { display:flex; align-items:center; gap:.55rem; cursor:pointer; }
+    .check-row input[type="checkbox"] {
+      width:16px; height:16px; border:1.5px solid #CCC; border-radius:4px;
+      accent-color:var(--gold-dark); cursor:pointer;
+    }
+    .check-label { font-size:.8rem; color:#666; user-select:none; }
+
+    .btn-signin {
+      display:flex; align-items:center; justify-content:center; gap:.5rem;
+      width:100%; padding:.85rem 1.5rem;
+      background:linear-gradient(135deg,#C9A227 0%,#D4AF37 55%,#E0BC44 100%);
+      color:#000; font-family:var(--fn-serif); font-size:.85rem; font-weight:700;
+      letter-spacing:.14em; text-transform:uppercase; border-radius:8px;
+      border:none; cursor:pointer; position:relative; overflow:hidden;
+      box-shadow:0 4px 20px rgba(212,175,55,.32);
+      transition:transform .2s var(--ease), box-shadow .2s var(--ease), filter .15s;
+    }
+    .btn-signin::before {
+      content:''; position:absolute; inset:0;
+      background:linear-gradient(to right,transparent,rgba(255,255,255,.18),transparent);
+      transform:translateX(-110%); transition:transform .5s ease;
+    }
+    .btn-signin:hover { transform:translateY(-2px); box-shadow:0 8px 28px rgba(212,175,55,.45); }
+    .btn-signin:hover::before { transform:translateX(110%); }
+    .btn-signin:active { transform:none; filter:brightness(.92); }
+    .btn-signin.loading .blabel { visibility:hidden; }
+    .btn-signin.loading::after { content:''; position:absolute; width:18px; height:18px; border:2px solid rgba(0,0,0,.25); border-top-color:#000; border-radius:50%; animation:spin .65s linear infinite; }
+    @keyframes spin { to { transform:rotate(360deg); } }
+
+    .divider { display:flex; align-items:center; gap:.75rem; margin:.2rem 0; }
+    .div-line { flex:1; height:1px; background:#DDD; }
+    .div-txt  { font-size:.7rem; color:#AAA; letter-spacing:.08em; text-transform:uppercase; white-space:nowrap; }
+
+    .btn-social {
+      display:flex; align-items:center; justify-content:center; gap:.65rem;
+      width:100%; padding:.75rem 1.2rem;
+      border:1.5px solid #DDD; border-radius:8px; background:#fff;
+      color:#333; font-size:.84rem; font-weight:600;
+      cursor:pointer; transition:border-color .2s, box-shadow .2s, background .2s;
+    }
+    .btn-social:hover { border-color:#BBB; box-shadow:0 2px 8px rgba(0,0,0,.07); background:#FAFAFA; }
+    .btn-social svg { width:18px; height:18px; flex-shrink:0; }
+
+    .create-row { text-align:center; font-size:.8rem; color:#888; margin-top:.5rem; }
+    .create-row a { color:var(--gold-dark); font-weight:600; transition:color .2s; }
+    .create-row a:hover { color:var(--gold); }
+
+    @media(max-width:480px) { .form-box { max-width:100%; } h1.login-h { font-size:1.4rem; } }
+  </style>
+</head>
+<body>
+<main class="wrap">
+
+  <!-- LEFT PANEL -->
+  <aside class="lp">
+    <a href="index.html" class="lp-logo" aria-label="Vintage &amp; Luxury Wedding Car Rental">
+      <div class="lp-logo-ring">
+        <img src="assets/images/brand/logo.png" alt="Vintage &amp; Luxury Emblem" class="lp-logo-img">
+      </div>
+      <div class="lp-brand-text">
+        <span class="lp-brand-name">VINTAGE <span>&amp;</span> LUXURY</span>
+        <span class="lp-brand-sub">Wedding Car Rental</span>
+      </div>
+    </a>
+
+    <div class="lp-main">
+      <svg class="lp-car" viewBox="0 0 580 240" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <ellipse cx="290" cy="202" rx="268" ry="13" fill="rgba(212,175,55,0.05)"/>
+        <path d="M50 192 L68 183 L80 167 L100 150 L145 132 L183 123 L212 116 L244 110 L282 107 L320 107 L348 110 L376 115 L432 125 L478 140 L503 153 L522 165 L535 178 L538 188 L540 192 Z" fill="rgba(212,175,55,0.08)" stroke="rgba(212,175,55,0.5)" stroke-width="1.1"/>
+        <path d="M177 123 L196 91 L224 74 L254 67 L290 64 L326 64 L350 67 L374 76 L392 91 L408 121" fill="rgba(212,175,55,0.09)" stroke="rgba(212,175,55,0.6)" stroke-width="1.4"/>
+        <path d="M198 120 L220 80 L254 68 L288 66 L288 119 Z" fill="rgba(212,175,55,0.07)" stroke="rgba(212,175,55,0.22)" stroke-width=".7"/>
+        <path d="M354 119 L358 66 L390 78 L406 92 L406 119 Z" fill="rgba(212,175,55,0.07)" stroke="rgba(212,175,55,0.22)" stroke-width=".7"/>
+        <rect x="295" y="66" width="54" height="53" rx="2" fill="rgba(212,175,55,0.06)" stroke="rgba(212,175,55,0.2)" stroke-width=".7"/>
+        <line x1="288" y1="108" x2="288" y2="192" stroke="rgba(212,175,55,0.17)" stroke-width=".7"/>
+        <line x1="352" y1="108" x2="352" y2="192" stroke="rgba(212,175,55,0.17)" stroke-width=".7"/>
+        <rect x="88" y="190" width="398" height="5" rx="2" fill="rgba(212,175,55,0.12)" stroke="rgba(212,175,55,0.2)" stroke-width=".5"/>
+        <circle cx="146" cy="194" r="34" fill="#060400" stroke="rgba(212,175,55,0.52)" stroke-width="1.4"/>
+        <circle cx="146" cy="194" r="21" fill="none" stroke="rgba(212,175,55,0.25)" stroke-width=".9"/>
+        <circle cx="146" cy="194" r="8"  fill="rgba(212,175,55,0.2)"/>
+        <line x1="146" y1="173" x2="146" y2="215" stroke="rgba(212,175,55,0.2)" stroke-width=".7"/>
+        <line x1="125" y1="194" x2="167" y2="194" stroke="rgba(212,175,55,0.2)" stroke-width=".7"/>
+        <line x1="131" y1="179" x2="161" y2="209" stroke="rgba(212,175,55,0.2)" stroke-width=".7"/>
+        <line x1="161" y1="179" x2="131" y2="209" stroke="rgba(212,175,55,0.2)" stroke-width=".7"/>
+        <circle cx="446" cy="194" r="34" fill="#060400" stroke="rgba(212,175,55,0.52)" stroke-width="1.4"/>
+        <circle cx="446" cy="194" r="21" fill="none" stroke="rgba(212,175,55,0.25)" stroke-width=".9"/>
+        <circle cx="446" cy="194" r="8"  fill="rgba(212,175,55,0.2)"/>
+        <line x1="446" y1="173" x2="446" y2="215" stroke="rgba(212,175,55,0.2)" stroke-width=".7"/>
+        <line x1="425" y1="194" x2="467" y2="194" stroke="rgba(212,175,55,0.2)" stroke-width=".7"/>
+        <line x1="431" y1="179" x2="461" y2="209" stroke="rgba(212,175,55,0.2)" stroke-width=".7"/>
+        <line x1="461" y1="179" x2="431" y2="209" stroke="rgba(212,175,55,0.2)" stroke-width=".7"/>
+        <rect x="522" y="150" width="20" height="38" rx="2" fill="rgba(212,175,55,0.12)" stroke="rgba(212,175,55,0.48)" stroke-width=".9"/>
+        <line x1="527" y1="150" x2="527" y2="188" stroke="rgba(212,175,55,0.28)" stroke-width=".5"/>
+        <line x1="532" y1="150" x2="532" y2="188" stroke="rgba(212,175,55,0.28)" stroke-width=".5"/>
+        <line x1="537" y1="150" x2="537" y2="188" stroke="rgba(212,175,55,0.28)" stroke-width=".5"/>
+        <ellipse cx="531" cy="164" rx="4.5" ry="7" fill="rgba(212,175,55,0.65)"/>
+        <ellipse cx="531" cy="164" rx="2.5" ry="4.5" fill="rgba(255,240,140,0.88)"/>
+        <path d="M530 148 L528 139 L526 134 L530 128 L534 134 L532 139 Z" fill="rgba(212,175,55,0.5)" stroke="rgba(212,175,55,0.9)" stroke-width=".5"/>
+      </svg>
+      <div class="lp-welcome">
+        <h2>Welcome to Luxury Fleet</h2>
+        <p>Sign in to reserve your distinguished vintage motorcar for your perfect wedding day.</p>
+      </div>
+    </div>
+
+    <div class="lp-badge">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+      </svg>
+      100% Secure &amp; Private
+    </div>
+  </aside>
+
+  <!-- RIGHT PANEL -->
+  <section class="rp">
+
+    <div class="form-box">
+      <a href="index.html" class="rp-brand" aria-label="Vintage &amp; Luxury Wedding Car Rental">
+        <div class="rp-logo-ring">
+          <img src="assets/images/brand/logo.png" alt="Brand Emblem" class="rp-logo-img">
+        </div>
+        <div class="rp-brand-text">
+          <span class="rp-brand-name">VINTAGE <span>&amp;</span> LUXURY</span>
+          <span class="rp-brand-sub">Wedding Car Rental</span>
+        </div>
+      </a>
+
+      <div class="acct-badge">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+        </svg>
+        Account Sign In
+      </div>
+
+      <h1 class="login-h">Customer Login</h1>
+      <p class="login-sub">
+        Enter your <a href="#">email</a> and password to access your <a href="dashboard.html">fleet dashboard</a>.
+      </p>
+
+      <form class="form" id="loginForm" novalidate>
+
+        <div class="fld" id="fldEmail">
+          <label class="flabel" for="loginEmail">Email Address</label>
+          <div class="fwrap">
+            <input type="email" id="loginEmail" class="finput" placeholder="name@example.com" autocomplete="email" required />
+          </div>
+          <span class="ferr">Please enter a valid email address.</span>
+        </div>
+
+        <div class="fld" id="fldPw">
+          <div class="frow">
+            <label class="flabel" for="loginPw">Password</label>
+            <a href="#" class="fforgot">Forgot Password?</a>
+          </div>
+          <div class="fwrap">
+            <input type="password" id="loginPw" class="finput" placeholder="••••••••" autocomplete="current-password" required style="padding-right:2.6rem"/>
+            <button type="button" class="ftoggle" id="pwToggle" aria-label="Show password">
+              <svg id="eyeOn" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"/><circle cx="12" cy="12" r="3"/>
+              </svg>
+              <svg id="eyeOff" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="display:none">
+                <path d="M17.94 17.94A10.07 10.07 0 0 1 12 20c-7 0-11-8-11-8a18.45 18.45 0 0 1 5.06-5.94"/>
+                <path d="M9.9 4.24A9.12 9.12 0 0 1 12 4c7 0 11 8 11 8a18.5 18.5 0 0 1-2.16 3.19"/>
+                <line x1="1" y1="1" x2="23" y2="23"/>
+              </svg>
+            </button>
+          </div>
+          <span class="ferr">Password must be at least 6 characters.</span>
+        </div>
+
+        <label class="check-row">
+          <input type="checkbox" id="rememberMe" />
+          <span class="check-label">Remember my login</span>
+        </label>
+
+        <button type="submit" class="btn-signin" id="submitBtn">
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M15 3h4a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2h-4"/><polyline points="10 17 15 12 10 7"/><line x1="15" y1="12" x2="3" y2="12"/>
+          </svg>
+          <span class="blabel">Sign In to Fleet</span>
+        </button>
+
+        <div class="divider">
+          <div class="div-line"></div>
+          <span class="div-txt">or continue with</span>
+          <div class="div-line"></div>
+        </div>
+
+        <button type="button" class="btn-social" id="googleBtn">
+          <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+            <path d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z" fill="#4285F4"/>
+            <path d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z" fill="#34A853"/>
+            <path d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l2.85-2.22.81-.62z" fill="#FBBC05"/>
+            <path d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z" fill="#EA4335"/>
+          </svg>
+          Continue with Google
+        </button>
+
+        <button type="button" class="btn-social" id="appleBtn">
+          <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" fill="currentColor">
+            <path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.8-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M13 3.5c.73-.83 1.94-1.46 2.94-1.5.13 1.17-.34 2.35-1.04 3.19-.69.85-1.83 1.51-2.95 1.42-.15-1.15.41-2.35 1.05-3.11z"/>
+          </svg>
+          Continue with Apple
+        </button>
+
+        <p class="create-row">
+          Don't have an account?&nbsp;
+          <a href="#" id="guestLink">Continue as Guest</a>
+        </p>
+
+      </form>
+    </div>
+  </section>
+
+</main>
+<script>
+  const pwToggle=document.getElementById('pwToggle'),
+        pwInput=document.getElementById('loginPw'),
+        eyeOn=document.getElementById('eyeOn'),
+        eyeOff=document.getElementById('eyeOff');
+  pwToggle.addEventListener('click',()=>{
+    const t=pwInput.type==='text';
+    pwInput.type=t?'password':'text';
+    eyeOn.style.display=t?'':'none';
+    eyeOff.style.display=t?'none':'';
+  });
+  const form=document.getElementById('loginForm'),
+        emailEl=document.getElementById('loginEmail'),
+        fldEmail=document.getElementById('fldEmail'),
+        fldPw=document.getElementById('fldPw'),
+        submitBtn=document.getElementById('submitBtn');
+  form.addEventListener('submit',e=>{
+    e.preventDefault();
+    fldEmail.classList.remove('err'); fldPw.classList.remove('err');
+    let ok=true;
+    if(!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(emailEl.value.trim())){fldEmail.classList.add('err');ok=false;}
+    if(pwInput.value.length<6){fldPw.classList.add('err');ok=false;}
+    if(!ok) return;
+    submitBtn.classList.add('loading'); submitBtn.disabled=true;
+    setTimeout(()=>{ window.location.href='dashboard.html'; },1800);
+  });
+  emailEl.addEventListener('input',()=>fldEmail.classList.remove('err'));
+  pwInput.addEventListener('input',()=>fldPw.classList.remove('err'));
+  document.getElementById('googleBtn').addEventListener('click',()=>alert('Google Sign-In coming soon'));
+  document.getElementById('appleBtn').addEventListener('click',()=>alert('Apple Sign-In coming soon'));
+  document.getElementById('guestLink').addEventListener('click',(e)=>{
+    e.preventDefault();
+    const v=new URLSearchParams(window.location.search).get('vehicle');
+    window.location.href=v?`contact.html?vehicle=${v}`:'contact.html';
+  });
+  document.querySelectorAll('.lp-logo, .rp-brand').forEach(brandEl => {
+    brandEl.addEventListener('click', (e) => {
+      e.preventDefault();
+      window.location.href = 'index.html';
+    });
+  });
+</script>
+</body>
+</html>

@@ -1,0 +1,572 @@
+﻿<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/images/brand/favicon-32x32.png?v=5.0">
+  <link rel="icon" type="image/png" sizes="64x64" href="assets/images/brand/favicon.png?v=5.0">
+  <link rel="shortcut icon" href="assets/images/brand/favicon.ico?v=5.0">
+  <link rel="apple-touch-icon" href="assets/images/brand/apple-touch-icon.png?v=5.0">
+  <title>Wedding Services &amp; Packages — Vintage &amp; Luxury Wedding Car Rental</title>
+  <meta name="description"
+    content="Discover our white-glove wedding car services: ceremonial bridal escorts, estate photoshoot positioning, champagne toast celebrations, and bespoke floral ribbon dressing.">
+  <link rel="stylesheet" href="assets/css/style.css?v=3.3">
+  <link rel="stylesheet" href="assets/css/responsive.css?v=3.1">
+</head>
+
+<body>
+
+  <!-- PAGE LOADER -->
+  <div class="page-loader" id="pageLoader" aria-label="Loading">
+    <div class="loader-brand-box">
+      <img src="assets/images/brand/logo.png" alt="Vintage &amp; Luxury Emblem" class="loader-logo-img">
+      <div class="loader-title">Wedding Services</div>
+      <div class="loader-bar-wrap">
+        <div class="loader-progress"></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- HEADER -->
+  <header class="site-header" id="siteHeader">
+    <div class="container-custom header-inner">
+      <a href="index.html" class="header-brand" aria-label="Vintage &amp; Luxury Wedding Car Rental">
+        <div class="brand-logo-wrap">
+          <img src="assets/images/brand/logo.png" alt="Brand Emblem" class="brand-logo-img">
+        </div>
+        <div class="brand-text-block">
+          <span class="brand-title">VINTAGE <span>&amp;</span> LUXURY</span>
+          <span class="brand-tagline">Wedding Car Rental</span>
+        </div>
+      </a>
+
+      <nav class="desktop-nav" aria-label="Primary Navigation">
+        <ul class="nav-list">
+          <li class="nav-item nav-dropdown" id="navDropdownHome">
+            <button type="button" class="nav-link" id="homeDropdownBtn" aria-expanded="false" aria-haspopup="true">
+              Home
+              <svg class="dropdown-arrow-icon" viewBox="0 0 24 24" fill="none">
+                <polyline points="6 9 12 15 18 9"></polyline>
+              </svg>
+            </button>
+            <div class="dropdown-menu">
+              <a href="index.html" class="dropdown-item">Home 1 — Royal Classic <span
+                  class="dropdown-badge">Default</span></a>
+              <a href="home-2.html" class="dropdown-item">Home 2 — Grand Estate <span
+                  class="dropdown-badge">Modern</span></a>
+            </div>
+          </li>
+          <li class="nav-item"><a href="fleet.html" class="nav-link">Fleet</a></li>
+          <li class="nav-item"><a href="services.html" class="nav-link active">Services</a></li>
+          <li class="nav-item"><a href="about.html" class="nav-link">About</a></li>
+          <li class="nav-item"><a href="dashboard.html" class="nav-link">Dashboard</a></li>
+          <li class="nav-item"><a href="contact.html" class="nav-link">Contact</a></li>
+        </ul>
+      </nav>
+
+      <div class="header-actions">
+        <button type="button" class="control-pill-btn rtl-toggle-btn" aria-label="Switch Direction">
+          <svg class="control-icon" viewBox="0 0 24 24">
+            <polyline points="16 3 21 3 21 8"></polyline>
+            <line x1="4" y1="20" x2="21" y2="3"></line>
+            <polyline points="21 16 21 21 16 21"></polyline>
+            <line x1="15" y1="15" x2="21" y2="21"></line>
+            <line x1="4" y1="4" x2="9" y2="9"></line>
+          </svg>
+          <span class="rtl-text">RTL</span>
+        </button>
+        <button type="button" class="control-pill-btn theme-toggle-btn" aria-label="Switch Theme">
+          <span class="theme-icon-wrap">
+            <svg class="control-icon" viewBox="0 0 24 24">
+              <circle cx="12" cy="12" r="5"></circle>
+              <line x1="12" y1="1" x2="12" y2="3"></line>
+              <line x1="12" y1="21" x2="12" y2="23"></line>
+              <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+              <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+              <line x1="1" y1="12" x2="3" y2="12"></line>
+              <line x1="21" y1="12" x2="23" y2="12"></line>
+              <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+              <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+            </svg>
+          </span>
+          <span class="theme-text">Light</span>
+        </button>
+        <a href="login.html" class="btn-login-header">
+          <svg viewBox="0 0 24 24" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/>
+            <circle cx="12" cy="7" r="4"/>
+          </svg>
+          Login
+        </a>
+        <button type="button" class="mobile-toggle-btn" id="mobileMenuBtn" aria-label="Open Menu">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <line x1="3" y1="6" x2="21" y2="6"></line>
+            <line x1="3" y1="12" x2="21" y2="12"></line>
+            <line x1="3" y1="18" x2="21" y2="18"></line>
+          </svg>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- MOBILE DRAWER -->
+  <div class="mobile-drawer-overlay" id="mobileDrawerOverlay"></div>
+  <aside class="mobile-drawer" id="mobileDrawer" aria-label="Mobile Navigation">
+    <div class="mobile-drawer-header">
+      <a href="index.html" class="header-brand" aria-label="Vintage &amp; Luxury Wedding Car Rental">
+        <div class="brand-logo-wrap"><img src="assets/images/brand/logo.png" alt="Emblem" class="brand-logo-img"></div>
+        <div class="brand-text-block">
+          <span class="brand-title">VINTAGE <span>&amp;</span> LUXURY</span>
+          <span class="brand-tagline">Wedding Car Rental</span>
+        </div>
+      </a>
+      <button type="button" class="mobile-close-btn" id="mobileCloseBtn" aria-label="Close Menu">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <line x1="18" y1="6" x2="6" y2="18"></line>
+          <line x1="6" y1="6" x2="18" y2="18"></line>
+        </svg>
+      </button>
+    </div>
+    <ul class="mobile-nav-list">
+      <li class="mobile-accordion-item" id="mobileHomeAccordion">
+        <button type="button" class="mobile-accordion-btn" id="mobileHomeAccordionBtn" aria-expanded="false">
+          <span>Home</span>
+          <svg class="dropdown-arrow-icon" viewBox="0 0 24 24" fill="none">
+            <polyline points="6 9 12 15 18 9"></polyline>
+          </svg>
+        </button>
+        <div class="mobile-accordion-content">
+          <a href="index.html" class="mobile-sub-link">Home 1 — Royal Classic</a>
+          <a href="home-2.html" class="mobile-sub-link">Home 2 — Grand Estate</a>
+        </div>
+      </li>
+      <li><a href="fleet.html" class="mobile-nav-link">Fleet</a></li>
+      <li><a href="services.html" class="mobile-nav-link active">Services</a></li>
+      <li><a href="about.html" class="mobile-nav-link">About</a></li>
+      <li><a href="dashboard.html" class="mobile-nav-link">Dashboard</a></li>
+      <li><a href="contact.html" class="mobile-nav-link">Contact</a></li>
+    </ul>
+    <div class="mobile-controls-wrap">
+      <div class="mobile-controls-row">
+        <button type="button" class="control-pill-btn rtl-toggle-btn control-pill-flex" aria-label="Switch Direction">
+          <svg class="control-icon" viewBox="0 0 24 24" width="14" height="14">
+            <polyline points="16 3 21 3 21 8"></polyline>
+            <line x1="4" y1="20" x2="21" y2="3"></line>
+            <polyline points="21 16 21 21 16 21"></polyline>
+            <line x1="15" y1="15" x2="21" y2="21"></line>
+            <line x1="4" y1="4" x2="9" y2="9"></line>
+          </svg>
+          <span class="rtl-text">RTL</span>
+        </button>
+        <button type="button" class="control-pill-btn theme-toggle-btn control-pill-flex" aria-label="Switch Theme">
+          <span class="theme-icon-wrap">
+            <svg class="control-icon" viewBox="0 0 24 24" width="14" height="14">
+              <circle cx="12" cy="12" r="5"></circle>
+              <line x1="12" y1="1" x2="12" y2="3"></line>
+              <line x1="12" y1="21" x2="12" y2="23"></line>
+              <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+              <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+              <line x1="1" y1="12" x2="3" y2="12"></line>
+              <line x1="21" y1="12" x2="23" y2="12"></line>
+              <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+              <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+            </svg>
+          </span>
+          <span class="theme-text">Light</span>
+        </button>
+      </div>
+      <a href="login.html" class="btn-gold-primary mobile-cta-full">Login</a>
+    </div>
+  </aside>
+
+  <main id="mainContent">
+
+    <!-- SERVICES HERO -->
+    <section class="svc-hero" aria-label="Services Hero">
+      <img src="assets/images/services/p10.jpg" alt="Wedding couple arriving at chapel in vintage motorcar"
+        class="svc-hero-img">
+      <div class="svc-hero-overlay"></div>
+      <div class="container-custom svc-hero-content">
+        <div class="section-eyebrow">The White-Glove Standard</div>
+        <h1 class="svc-hero-heading font-serif">Ceremonial <em>Excellence</em></h1>
+        <p class="svc-hero-sub">From quiet countryside church arrivals to grand estate receptions, our protocol-trained
+          chauffeurs orchestrate every minute with immaculate poise.</p>
+      </div>
+    </section>
+
+    <!-- STATS RIBBON -->
+    <section class="svc-stats-ribbon" aria-label="Performance Metrics">
+      <div class="container-custom">
+        <div class="svc-stats-row">
+          <div class="svc-stat-cell">
+            <div class="svc-stat-num">100%</div>
+            <div class="svc-stat-lbl">On-Time Arrival Record</div>
+          </div>
+          <div class="svc-stat-cell">
+            <div class="svc-stat-num">3,400+</div>
+            <div class="svc-stat-lbl">Ceremonies Chauffeured</div>
+          </div>
+          <div class="svc-stat-cell">
+            <div class="svc-stat-num">45 Min</div>
+            <div class="svc-stat-lbl">Complimentary Buffer Time</div>
+          </div>
+          <div class="svc-stat-cell">
+            <div class="svc-stat-num">15</div>
+            <div class="svc-stat-lbl">Master Guild Chauffeurs</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- OVERVIEW SECTION: EDITORIAL VISUAL BLOCKS -->
+    <section class="svc-overview-section" aria-label="Wedding Experiences">
+      <div class="container-custom">
+
+        <!-- Block 1: Bridal Entrance -->
+        <article class="svc-overview-grid reveal-up">
+          <div class="svc-overview-img-frame">
+            <img src="assets/images/services/p5.jpg"
+              alt="Bride stepping out of classic vintage car with chauffeur holding door" loading="lazy">
+            <div class="svc-overview-img-tag">Signature Bridal Escort</div>
+          </div>
+          <div class="svc-overview-text">
+            <div class="section-eyebrow">The Aisle Journey</div>
+            <h2 class="svc-overview-heading font-serif">Immaculate Bridal Arrival Protocol</h2>
+            <p class="svc-overview-body">Your entrance to the altar is an indelible memory. Our senior chauffeur arrives
+              45 minutes ahead of schedule, coordinates seamlessly with your bridal party, and ensures stress-free
+              transit with silk-protected door seals.</p>
+            <ul class="svc-overview-checklist">
+              <li class="svc-overview-check-item">
+                <svg class="svc-check-icon" viewBox="0 0 24 24">
+                  <polyline points="20 6 9 17 4 12"></polyline>
+                </svg>
+                <span>Senior chauffeur in tailored Savile Row charcoal uniform &amp; peaked cap</span>
+              </li>
+              <li class="svc-overview-check-item">
+                <svg class="svc-check-icon" viewBox="0 0 24 24">
+                  <polyline points="20 6 9 17 4 12"></polyline>
+                </svg>
+                <span>Generous door opening clearances with gown and veil assistance</span>
+              </li>
+              <li class="svc-overview-check-item">
+                <svg class="svc-check-icon" viewBox="0 0 24 24">
+                  <polyline points="20 6 9 17 4 12"></polyline>
+                </svg>
+                <span>Twin full-size ivory silk golf umbrellas on stand-by for all weather</span>
+              </li>
+            </ul>
+            <a href="contact.html?service=bridal-escort" class="btn-gold-outline">Inquire For This Service</a>
+          </div>
+        </article>
+
+        <!-- Block 2: Sunset Editorial Photoshoot (Reverse Layout) -->
+        <article class="svc-overview-grid svc-overview-grid--reverse reveal-up">
+          <div class="svc-overview-img-frame">
+            <img src="assets/images/services/p6.jpg"
+              alt="Newlywed couple posing beside vintage motorcar during golden hour" loading="lazy">
+            <div class="svc-overview-img-tag">Editorial Portrait Staging</div>
+          </div>
+          <div class="svc-overview-text">
+            <div class="section-eyebrow">Timeless Photography</div>
+            <h2 class="svc-overview-heading font-serif">Estate Grounds &amp; Golden Hour Staging</h2>
+            <p class="svc-overview-body">A vintage motorcar is more than transport — it is a dramatic editorial
+              centerpiece. We allocate dedicated time between ceremony and reception for high-fashion photography on
+              your venue's sweeping grounds.</p>
+            <ul class="svc-overview-checklist">
+              <li class="svc-overview-check-item">
+                <svg class="svc-check-icon" viewBox="0 0 24 24">
+                  <polyline points="20 6 9 17 4 12"></polyline>
+                </svg>
+                <span>Direct collaboration with your wedding photographer for angles &amp; lighting</span>
+              </li>
+              <li class="svc-overview-check-item">
+                <svg class="svc-check-icon" viewBox="0 0 24 24">
+                  <polyline points="20 6 9 17 4 12"></polyline>
+                </svg>
+                <span>Period-correct accessories: vintage leather luggage trunk and wicker picnic basket</span>
+              </li>
+              <li class="svc-overview-check-item">
+                <svg class="svc-check-icon" viewBox="0 0 24 24">
+                  <polyline points="20 6 9 17 4 12"></polyline>
+                </svg>
+                <span>Convertible hood open/close positioning on demand for diverse shots</span>
+              </li>
+            </ul>
+            <a href="contact.html?service=photoshoot" class="btn-gold-outline">Inquire For This Service</a>
+          </div>
+        </article>
+
+        <!-- Block 3: Champagne Toast Celebration -->
+        <article class="svc-overview-grid reveal-up">
+          <div class="svc-overview-img-frame">
+            <img src="assets/images/services/p7.jpg"
+              alt="Crystal champagne flutes and chilled champagne inside vintage luxury car" loading="lazy">
+            <div class="svc-overview-img-tag">En-Route Celebration</div>
+          </div>
+          <div class="svc-overview-text">
+            <div class="section-eyebrow">Just Married Moments</div>
+            <h2 class="svc-overview-heading font-serif">The Royal Champagne Toast</h2>
+            <p class="svc-overview-body">Your first intimate journey as husband and wife. While the guests travel to the
+              banquet, enjoy a peaceful scenic countryside detour while savoring vintage champagne chilled to perfection
+              in our on-board ice cellar.</p>
+            <ul class="svc-overview-checklist">
+              <li class="svc-overview-check-item">
+                <svg class="svc-check-icon" viewBox="0 0 24 24">
+                  <polyline points="20 6 9 17 4 12"></polyline>
+                </svg>
+                <span>Complimentary bottle of Laurent-Perrier Cuvée Rosé or Dom Pérignon</span>
+              </li>
+              <li class="svc-overview-check-item">
+                <svg class="svc-check-icon" viewBox="0 0 24 24">
+                  <polyline points="20 6 9 17 4 12"></polyline>
+                </svg>
+                <span>Lead crystal flutes with engraved monogram souvenir keepsake</span>
+              </li>
+              <li class="svc-overview-check-item">
+                <svg class="svc-check-icon" viewBox="0 0 24 24">
+                  <polyline points="20 6 9 17 4 12"></polyline>
+                </svg>
+                <span>Curated acoustic playlist or discreet complete cabin privacy division</span>
+              </li>
+            </ul>
+            <a href="contact.html?service=champagne-toast" class="btn-gold-outline">Inquire For This Service</a>
+          </div>
+        </article>
+
+        <!-- Block 4: Floral Ribbon Dressing (Reverse Layout) -->
+        <article class="svc-overview-grid svc-overview-grid--reverse reveal-up">
+          <div class="svc-overview-img-frame">
+            <img src="assets/images/services/p8.jpg"
+              alt="Artisan fresh flower garland and satin ribbon dressing on vintage car hood" loading="lazy">
+            <div class="svc-overview-img-tag">Bespoke Artisan Dressing</div>
+          </div>
+          <div class="svc-overview-text">
+            <div class="section-eyebrow">Custom Styling</div>
+            <h2 class="svc-overview-heading font-serif">Hand-Crafted Floral &amp; Silk Ribbon Styling</h2>
+            <p class="svc-overview-body">We coordinate with your wedding florist to match your exact ceremony color
+              palette. From hand-pressed Italian satin bonnet ribbons to trailing fresh garden rose garlands, every
+              embellishment is mounted without marring vintage lacquer.</p>
+            <ul class="svc-overview-checklist">
+              <li class="svc-overview-check-item">
+                <svg class="svc-check-icon" viewBox="0 0 24 24">
+                  <polyline points="20 6 9 17 4 12"></polyline>
+                </svg>
+                <span>Non-abrasive magnetic and suction fixtures engineered for historic paintwork</span>
+              </li>
+              <li class="svc-overview-check-item">
+                <svg class="svc-check-icon" viewBox="0 0 24 24">
+                  <polyline points="20 6 9 17 4 12"></polyline>
+                </svg>
+                <span>Choice of 24 silk ribbon tones matching bridal gown and bridesmaid attire</span>
+              </li>
+              <li class="svc-overview-check-item">
+                <svg class="svc-check-icon" viewBox="0 0 24 24">
+                  <polyline points="20 6 9 17 4 12"></polyline>
+                </svg>
+                <span>Personalized embossed vintage rear registration plate (e.g. &ldquo;JUST MARRIED&rdquo;)</span>
+              </li>
+            </ul>
+            <a href="contact.html?service=floral-styling" class="btn-gold-outline">Inquire For This Service</a>
+          </div>
+        </article>
+
+      </div>
+    </section>
+
+    <!-- PROCESS ACCORDION SECTION -->
+    <section class="svc-process-section" aria-label="Our Operational Process">
+      <div class="container-custom">
+        <div class="svc-process-header reveal-up">
+          <div class="section-eyebrow">Flawless Delivery</div>
+          <h2 class="svc-process-title font-serif">How We Orchestrate Your Day</h2>
+        </div>
+
+        <div class="svc-process-grid">
+          <!-- Sticky Visual Column -->
+          <div class="svc-process-img-col reveal-left">
+            <img src="assets/images/sections/p9.jpg"
+              alt="Senior chauffeur checking pocket watch beside classic Rolls-Royce" loading="lazy">
+          </div>
+
+          <!-- Accordion Column -->
+          <div class="svc-accordion-list reveal-right">
+
+            <div class="svc-accordion-item">
+              <button type="button" class="svc-accordion-trigger" aria-expanded="true">
+                <span class="svc-accordion-num">01</span>
+                <span class="svc-accordion-label">Private Consultation &amp; Route Reconnaissance</span>
+                <svg class="svc-accordion-chevron" viewBox="0 0 24 24">
+                  <polyline points="6 9 12 15 18 9"></polyline>
+                </svg>
+              </button>
+              <div class="svc-accordion-body is-open">
+                <div class="svc-accordion-content">
+                  Two weeks prior to the wedding, our operations director drives the exact route, mapping estate gateway
+                  heights, gravel drive gradients, church parking clearances, and traffic contingencies to ensure
+                  precision timing.
+                </div>
+              </div>
+            </div>
+
+            <div class="svc-accordion-item">
+              <button type="button" class="svc-accordion-trigger" aria-expanded="false">
+                <span class="svc-accordion-num">02</span>
+                <span class="svc-accordion-label">Concourse Detailing &amp; Mechanical Inspection</span>
+                <svg class="svc-accordion-chevron" viewBox="0 0 24 24">
+                  <polyline points="6 9 12 15 18 9"></polyline>
+                </svg>
+              </button>
+              <div class="svc-accordion-body">
+                <div class="svc-accordion-content">
+                  At dawn on your wedding day, your motorcar receives a 5-hour hand polish using Swissvax carnauba wax,
+                  leather nourishment, mechanical pre-flight checks, and temperature calibration inside our
+                  humidity-controlled facility.
+                </div>
+              </div>
+            </div>
+
+            <div class="svc-accordion-item">
+              <button type="button" class="svc-accordion-trigger" aria-expanded="false">
+                <span class="svc-accordion-num">03</span>
+                <span class="svc-accordion-label">Punctual Arrival with 45-Minute Buffer</span>
+                <svg class="svc-accordion-chevron" viewBox="0 0 24 24">
+                  <polyline points="6 9 12 15 18 9"></polyline>
+                </svg>
+              </button>
+              <div class="svc-accordion-body">
+                <div class="svc-accordion-content">
+                  Your chauffeur arrives at the collection address 45 minutes before scheduled departure. This provides
+                  complete peace of mind, unhurried bridal portraits by the car, and seamless coordination with the
+                  bride's parents.
+                </div>
+              </div>
+            </div>
+
+            <div class="svc-accordion-item">
+              <button type="button" class="svc-accordion-trigger" aria-expanded="false">
+                <span class="svc-accordion-num">04</span>
+                <span class="svc-accordion-label">Ceremonial Escort &amp; Red-Carpet Departure</span>
+                <svg class="svc-accordion-chevron" viewBox="0 0 24 24">
+                  <polyline points="6 9 12 15 18 9"></polyline>
+                </svg>
+              </button>
+              <div class="svc-accordion-body">
+                <div class="svc-accordion-content">
+                  Following the vows and petal confetti recessional, your chauffeur greets you with chilled champagne,
+                  opens the hand-trimmed carriage doors, and whisks you away on an unforgettable victory drive to your
+                  reception feast.
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SERVICES CTA STRIP -->
+    <section class="fleet-cta-strip" aria-label="Bespoke Inquiries">
+      <div class="container-custom fleet-cta-strip-inner">
+        <div>
+          <div class="section-eyebrow">Custom Wedding Packages</div>
+          <h2 class="fleet-cta-strip-title">Have a Multi-Car Ceremony Requirement?</h2>
+          <p class="fleet-cta-strip-desc">We coordinate multi-vehicle motorcades for bridal parties, groomsmen, and VIP
+            guests across multiple ceremony venues and airports.</p>
+        </div>
+        <div class="fleet-cta-actions">
+          <a href="login.html" class="btn-gold-primary">Request Bespoke Proposal</a>
+          <a href="fleet.html" class="btn-gold-outline">Browse Collection</a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- SCROLL TO TOP -->
+  <button type="button" class="scroll-top-btn" id="scrollTopBtn" aria-label="Scroll to top">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor">
+      <polyline points="18 15 12 9 6 15"></polyline>
+    </svg>
+  </button>
+
+  <!-- FOOTER -->
+  <footer class="site-footer">
+    <div class="container-custom">
+      <div class="footer-top-grid">
+        <div class="footer-brand-col">
+          <div class="footer-logo-row">
+            <img src="assets/images/brand/logo.png" alt="Vintage &amp; Luxury Brand Emblem" class="footer-logo-img">
+            <div>
+              <div class="footer-brand-title">VINTAGE <span>&amp;</span> LUXURY</div>
+              <div class="footer-brand-tagline">Wedding Car Rental</div>
+            </div>
+          </div>
+          <p class="footer-desc">
+            Curating timeless moments with the world's most distinguished vintage and prestige wedding motorcars.
+            Bespoke white-glove chauffeuring for your wedding celebration.
+          </p>
+        </div>
+        <div>
+          <h4 class="footer-col-title">Explore</h4>
+          <ul class="footer-links-list">
+            <li><a href="index.html">Home — Royal Classic</a></li>
+            <li><a href="home-2.html">Home — Grand Estate</a></li>
+            <li><a href="fleet.html">Vintage Fleet</a></li>
+            <li><a href="services.html">Wedding Packages</a></li>
+            <li><a href="about.html">Our Heritage</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="footer-col-title">Services</h4>
+          <ul class="footer-links-list">
+            <li><a href="services.html">Chauffeur Escort</a></li>
+            <li><a href="services.html">Floral Dressing</a></li>
+            <li><a href="services.html">Champagne Service</a></li>
+            <li><a href="dashboard.html">Client Portal</a></li>
+            <li><a href="contact.html">Consultation</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="footer-col-title">Concierge</h4>
+          <div class="footer-contact-info">
+            <div class="footer-contact-item">
+              <svg class="footer-contact-icon" viewBox="0 0 24 24" fill="none">
+                <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                <circle cx="12" cy="10" r="3"></circle>
+              </svg>
+              <span>Mayfair Carriage Mews, London &amp; Palm Beach</span>
+            </div>
+            <div class="footer-contact-item">
+              <svg class="footer-contact-icon" viewBox="0 0 24 24" fill="none">
+                <path
+                  d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z">
+                </path>
+              </svg>
+              <span>+44 20 7946 0912</span>
+            </div>
+            <div class="footer-contact-item">
+              <svg class="footer-contact-icon" viewBox="0 0 24 24" fill="none">
+                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                <polyline points="22,6 12,13 2,6"></polyline>
+              </svg>
+              <span>concierge@vintage-luxurycars.com</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <div>&copy; 2026 Vintage &amp; Luxury Wedding Car Rental. All rights reserved.</div>
+        <div class="footer-bottom-links">
+          <a href="#">Privacy Policy</a>
+          <a href="#">Rental Agreement</a>
+          <a href="#">Terms</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="assets/js/main.js?v=3.2"></script>
+</body>
+
+</html>

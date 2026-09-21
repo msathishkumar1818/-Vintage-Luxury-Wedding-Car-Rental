@@ -1,0 +1,606 @@
+﻿<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/images/brand/favicon-32x32.png?v=5.0">
+  <link rel="icon" type="image/png" sizes="64x64" href="assets/images/brand/favicon.png?v=5.0">
+  <link rel="shortcut icon" href="assets/images/brand/favicon.ico?v=5.0">
+  <link rel="apple-touch-icon" href="assets/images/brand/apple-touch-icon.png?v=5.0">
+  <title>Concierge &amp; Reservations — Vintage &amp; Luxury Wedding Car Rental</title>
+  <meta name="description"
+    content="Reserve your ceremonial wedding motorcar or book a private consultation at our Mayfair carriage house showroom. Contact our master fleet director.">
+  <link rel="stylesheet" href="assets/css/style.css?v=3.3">
+  <link rel="stylesheet" href="assets/css/responsive.css?v=3.1">
+</head>
+
+<body>
+
+  <!-- PAGE LOADER -->
+  <div class="page-loader" id="pageLoader" aria-label="Loading">
+    <div class="loader-brand-box">
+      <img src="assets/images/brand/logo.png" alt="Vintage &amp; Luxury Emblem" class="loader-logo-img">
+      <div class="loader-title">Concierge &amp; Reservations</div>
+      <div class="loader-bar-wrap">
+        <div class="loader-progress"></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- HEADER -->
+  <header class="site-header" id="siteHeader">
+    <div class="container-custom header-inner">
+      <a href="index.html" class="header-brand" aria-label="Vintage &amp; Luxury Wedding Car Rental">
+        <div class="brand-logo-wrap">
+          <img src="assets/images/brand/logo.png" alt="Brand Emblem" class="brand-logo-img">
+        </div>
+        <div class="brand-text-block">
+          <span class="brand-title">VINTAGE <span>&amp;</span> LUXURY</span>
+          <span class="brand-tagline">Wedding Car Rental</span>
+        </div>
+      </a>
+
+      <nav class="desktop-nav" aria-label="Primary Navigation">
+        <ul class="nav-list">
+          <li class="nav-item nav-dropdown" id="navDropdownHome">
+            <button type="button" class="nav-link" id="homeDropdownBtn" aria-expanded="false" aria-haspopup="true">
+              Home
+              <svg class="dropdown-arrow-icon" viewBox="0 0 24 24" fill="none">
+                <polyline points="6 9 12 15 18 9"></polyline>
+              </svg>
+            </button>
+            <div class="dropdown-menu">
+              <a href="index.html" class="dropdown-item">Home 1 — Royal Classic <span
+                  class="dropdown-badge">Default</span></a>
+              <a href="home-2.html" class="dropdown-item">Home 2 — Grand Estate <span
+                  class="dropdown-badge">Modern</span></a>
+            </div>
+          </li>
+          <li class="nav-item"><a href="fleet.html" class="nav-link">Fleet</a></li>
+          <li class="nav-item"><a href="services.html" class="nav-link">Services</a></li>
+          <li class="nav-item"><a href="about.html" class="nav-link">About</a></li>
+          <li class="nav-item"><a href="dashboard.html" class="nav-link">Dashboard</a></li>
+          <li class="nav-item"><a href="contact.html" class="nav-link active">Contact</a></li>
+        </ul>
+      </nav>
+
+      <div class="header-actions">
+        <button type="button" class="control-pill-btn rtl-toggle-btn" aria-label="Switch Direction">
+          <svg class="control-icon" viewBox="0 0 24 24">
+            <polyline points="16 3 21 3 21 8"></polyline>
+            <line x1="4" y1="20" x2="21" y2="3"></line>
+            <polyline points="21 16 21 21 16 21"></polyline>
+            <line x1="15" y1="15" x2="21" y2="21"></line>
+            <line x1="4" y1="4" x2="9" y2="9"></line>
+          </svg>
+          <span class="rtl-text">RTL</span>
+        </button>
+        <button type="button" class="control-pill-btn theme-toggle-btn" aria-label="Switch Theme">
+          <span class="theme-icon-wrap">
+            <svg class="control-icon" viewBox="0 0 24 24">
+              <circle cx="12" cy="12" r="5"></circle>
+              <line x1="12" y1="1" x2="12" y2="3"></line>
+              <line x1="12" y1="21" x2="12" y2="23"></line>
+              <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+              <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+              <line x1="1" y1="12" x2="3" y2="12"></line>
+              <line x1="21" y1="12" x2="23" y2="12"></line>
+              <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+              <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+            </svg>
+          </span>
+          <span class="theme-text">Light</span>
+        </button>
+        <a href="login.html" class="btn-login-header">
+          <svg viewBox="0 0 24 24" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/>
+            <circle cx="12" cy="7" r="4"/>
+          </svg>
+          Login
+        </a>
+        <button type="button" class="mobile-toggle-btn" id="mobileMenuBtn" aria-label="Open Menu">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <line x1="3" y1="6" x2="21" y2="6"></line>
+            <line x1="3" y1="12" x2="21" y2="12"></line>
+            <line x1="3" y1="18" x2="21" y2="18"></line>
+          </svg>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- MOBILE DRAWER -->
+  <div class="mobile-drawer-overlay" id="mobileDrawerOverlay"></div>
+  <aside class="mobile-drawer" id="mobileDrawer" aria-label="Mobile Navigation">
+    <div class="mobile-drawer-header">
+      <a href="index.html" class="header-brand" aria-label="Vintage &amp; Luxury Wedding Car Rental">
+        <div class="brand-logo-wrap"><img src="assets/images/brand/logo.png" alt="Emblem" class="brand-logo-img"></div>
+        <div class="brand-text-block">
+          <span class="brand-title">VINTAGE <span>&amp;</span> LUXURY</span>
+          <span class="brand-tagline">Wedding Car Rental</span>
+        </div>
+      </a>
+      <button type="button" class="mobile-close-btn" id="mobileCloseBtn" aria-label="Close Menu">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <line x1="18" y1="6" x2="6" y2="18"></line>
+          <line x1="6" y1="6" x2="18" y2="18"></line>
+        </svg>
+      </button>
+    </div>
+    <ul class="mobile-nav-list">
+      <li class="mobile-accordion-item" id="mobileHomeAccordion">
+        <button type="button" class="mobile-accordion-btn" id="mobileHomeAccordionBtn" aria-expanded="false">
+          <span>Home</span>
+          <svg class="dropdown-arrow-icon" viewBox="0 0 24 24" fill="none">
+            <polyline points="6 9 12 15 18 9"></polyline>
+          </svg>
+        </button>
+        <div class="mobile-accordion-content">
+          <a href="index.html" class="mobile-sub-link">Home 1 — Royal Classic</a>
+          <a href="home-2.html" class="mobile-sub-link">Home 2 — Grand Estate</a>
+        </div>
+      </li>
+      <li><a href="fleet.html" class="mobile-nav-link">Fleet</a></li>
+      <li><a href="services.html" class="mobile-nav-link">Services</a></li>
+      <li><a href="about.html" class="mobile-nav-link">About</a></li>
+      <li><a href="dashboard.html" class="mobile-nav-link">Dashboard</a></li>
+      <li><a href="contact.html" class="mobile-nav-link active">Contact</a></li>
+    </ul>
+    <div class="mobile-controls-wrap">
+      <div class="mobile-controls-row">
+        <button type="button" class="control-pill-btn rtl-toggle-btn control-pill-flex" aria-label="Switch Direction">
+          <svg class="control-icon" viewBox="0 0 24 24" width="14" height="14">
+            <polyline points="16 3 21 3 21 8"></polyline>
+            <line x1="4" y1="20" x2="21" y2="3"></line>
+            <polyline points="21 16 21 21 16 21"></polyline>
+            <line x1="15" y1="15" x2="21" y2="21"></line>
+            <line x1="4" y1="4" x2="9" y2="9"></line>
+          </svg>
+          <span class="rtl-text">RTL</span>
+        </button>
+        <button type="button" class="control-pill-btn theme-toggle-btn control-pill-flex" aria-label="Switch Theme">
+          <span class="theme-icon-wrap">
+            <svg class="control-icon" viewBox="0 0 24 24" width="14" height="14">
+              <circle cx="12" cy="12" r="5"></circle>
+              <line x1="12" y1="1" x2="12" y2="3"></line>
+              <line x1="12" y1="21" x2="12" y2="23"></line>
+              <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+              <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+              <line x1="1" y1="12" x2="3" y2="12"></line>
+              <line x1="21" y1="12" x2="23" y2="12"></line>
+              <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+              <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+            </svg>
+          </span>
+          <span class="theme-text">Light</span>
+        </button>
+      </div>
+      <a href="login.html" class="btn-gold-primary mobile-cta-full">Login</a>
+    </div>
+  </aside>
+
+  <main id="mainContent">
+
+    <!-- CONTACT HERO -->
+    <section class="contact-hero" aria-label="Contact Concierge Hero">
+      <img src="assets/images/contact/p19.jpg" alt="Vintage &amp; Luxury carriage house estate headquarters"
+        class="contact-hero-img">
+      <div class="contact-hero-overlay"></div>
+      <div class="container-custom contact-hero-content">
+        <div class="section-eyebrow">Private Reservations &amp; Consultation</div>
+        <h1 class="contact-hero-heading font-serif">Bespoke <em>Consultation</em></h1>
+        <p class="contact-hero-sub">Engage with our senior wedding fleet director to curate your ceremonial itinerary,
+          schedule a showroom viewing, or secure your wedding date.</p>
+      </div>
+    </section>
+
+    <!-- CONTACT MAIN SECTION -->
+    <section class="contact-main-section" aria-label="Concierge and Booking Form">
+      <div class="container-custom">
+        <div class="contact-main-grid">
+
+          <!-- Left: Concierge Information Column -->
+          <div class="contact-info-col reveal-left">
+            <div class="section-eyebrow">Direct Concierge</div>
+            <h2 class="contact-info-heading font-serif">The Mayfair Carriage House</h2>
+            <p class="contact-info-intro">We invite couples and wedding planners to inspect our vintage collection in
+              person with private appointment tastings and ribbon matchings.</p>
+
+            <!-- Showroom Photo Card -->
+            <div class="contact-showroom-card">
+              <img src="assets/images/contact/p20.jpg" alt="Private consultation lounge at Mayfair carriage house"
+                class="contact-showroom-img" loading="lazy">
+              <div class="contact-showroom-body">
+                <div class="contact-showroom-tag">Private Viewing Suite</div>
+                <h3 class="contact-showroom-title">Mayfair Consultation Lounge</h3>
+                <p class="contact-showroom-sub">Reserve a 45-minute private consultation accompanied by champagne and
+                  vehicle test seatings.</p>
+              </div>
+            </div>
+
+            <!-- Contact Detail List -->
+            <div class="contact-detail-list">
+              <div class="contact-detail-item">
+                <div class="contact-detail-icon-box">
+                  <svg class="contact-detail-svg" viewBox="0 0 24 24">
+                    <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                    <circle cx="12" cy="10" r="3"></circle>
+                  </svg>
+                </div>
+                <div>
+                  <div class="contact-detail-label">Carriage House Address</div>
+                  <div class="contact-detail-value">14 Mayfair Carriage Mews<br>London, W1K 6LF, United Kingdom</div>
+                </div>
+              </div>
+
+              <div class="contact-detail-item">
+                <div class="contact-detail-icon-box">
+                  <svg class="contact-detail-svg" viewBox="0 0 24 24">
+                    <path
+                      d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z">
+                    </path>
+                  </svg>
+                </div>
+                <div>
+                  <div class="contact-detail-label">Direct Concierge Telephone</div>
+                  <div class="contact-detail-value">+44 20 7946 0912 &bull; Mon–Sat 9:00–18:00</div>
+                </div>
+              </div>
+
+              <div class="contact-detail-item">
+                <div class="contact-detail-icon-box">
+                  <svg class="contact-detail-svg" viewBox="0 0 24 24">
+                    <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                    <polyline points="22,6 12,13 2,6"></polyline>
+                  </svg>
+                </div>
+                <div>
+                  <div class="contact-detail-label">VIP Inquiry Email</div>
+                  <div class="contact-detail-value">concierge@vintage-luxurycars.com</div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Operating Hours Box -->
+            <div class="contact-hours-box">
+              <div class="contact-hours-title">Showroom &amp; Dispatch Hours</div>
+              <div class="contact-hours-row">
+                <span class="contact-hours-day">Monday &ndash; Friday</span>
+                <span>08:30 &ndash; 19:00 GMT</span>
+              </div>
+              <div class="contact-hours-row">
+                <span class="contact-hours-day">Saturday</span>
+                <span>09:00 &ndash; 18:00 GMT</span>
+              </div>
+              <div class="contact-hours-row">
+                <span class="contact-hours-day">Sunday &amp; Bank Holidays</span>
+                <span>Ceremonial Dispatch Only</span>
+              </div>
+            </div>
+
+          </div>
+
+          <!-- Right: Interactive Booking Inquiry Form -->
+          <div class="contact-form-col reveal-right">
+            <div class="section-eyebrow">Date Reservation</div>
+            <h2 class="contact-form-title font-serif">Inquire For Your Wedding Date</h2>
+            <p class="contact-form-sub">Submit your ceremony specifications below. Our senior operations director will
+              review vehicle availability and return a bespoke quotation within 12 hours.</p>
+
+            <form class="contact-form" id="bookingInquiryForm" action="#" method="POST"
+              onsubmit="event.preventDefault(); alert('Thank you for your ceremonial inquiry. Our senior fleet concierge will contact you within 12 hours with your bespoke itinerary.');">
+              <div class="form-row-2">
+                <div class="form-field">
+                  <label for="fullName" class="form-label">Your Full Name <span>*</span></label>
+                  <input type="text" id="fullName" name="fullName" class="form-input"
+                    placeholder="Lady Eleanor Montgomery" required>
+                </div>
+                <div class="form-field">
+                  <label for="partnerName" class="form-label">Partner's Name</label>
+                  <input type="text" id="partnerName" name="partnerName" class="form-input"
+                    placeholder="Lord Arthur Sterling">
+                </div>
+              </div>
+
+              <div class="form-row-2">
+                <div class="form-field">
+                  <label for="emailAddress" class="form-label">Email Address <span>*</span></label>
+                  <input type="email" id="emailAddress" name="email" class="form-input"
+                    placeholder="eleanor@luxuryweddings.co.uk" required>
+                </div>
+                <div class="form-field">
+                  <label for="phoneContact" class="form-label">Mobile Telephone <span>*</span></label>
+                  <input type="tel" id="phoneContact" name="phone" class="form-input" placeholder="+44 7700 900821"
+                    required>
+                </div>
+              </div>
+
+              <div class="form-row-2">
+                <div class="form-field">
+                  <label for="weddingDate" class="form-label">Wedding Ceremony Date <span>*</span></label>
+                  <input type="date" id="weddingDate" name="weddingDate" class="form-input" required>
+                </div>
+                <div class="form-field">
+                  <label for="selectedVehicle" class="form-label">Preferred Motorcar <span>*</span></label>
+                  <select id="selectedVehicle" name="vehicle" class="form-select" required>
+                    <option value="" disabled selected>Select from Collection</option>
+                    <option value="rolls-silver-cloud">1958 Rolls-Royce Silver Cloud I (White)</option>
+                    <option value="jaguar-mk2">1965 Jaguar Mk2 3.8 (British Racing Green)</option>
+                    <option value="bentley-s3">1962 Bentley S3 Continental Flying Spur</option>
+                    <option value="beauford-tourer">1930s Beauford Open Tourer Convertible</option>
+                    <option value="mercedes-280se">1969 Mercedes-Benz 280SE Cabriolet</option>
+                    <option value="daimler-ds420">1974 Daimler DS420 Royal State Limousine</option>
+                    <option value="cadillac-fleetwood">1959 Cadillac Fleetwood Series 60</option>
+                    <option value="phantom-viii">2024 Rolls-Royce Phantom VIII</option>
+                    <option value="multi-car">Multi-Car Motorcade Package</option>
+                  </select>
+                </div>
+              </div>
+
+              <div class="form-row-2">
+                <div class="form-field">
+                  <label for="pickupAddress" class="form-label">Collection Location / City <span>*</span></label>
+                  <input type="text" id="pickupAddress" name="pickup" class="form-input"
+                    placeholder="e.g. Kensington Palace Gardens, London" required>
+                </div>
+                <div class="form-field">
+                  <label for="ceremonyVenue" class="form-label">Ceremony &amp; Reception Venues <span>*</span></label>
+                  <input type="text" id="ceremonyVenue" name="venue" class="form-input"
+                    placeholder="e.g. St. Paul's Cathedral &amp; The Savoy" required>
+                </div>
+              </div>
+
+              <div class="form-field">
+                <label for="notesMessage" class="form-label">Special Itinerary Notes &amp; Requests</label>
+                <textarea id="notesMessage" name="notes" class="form-textarea"
+                  placeholder="Please mention ribbon color preferences, photography detour locations, champagne brand preferences, or multi-car convoy requirements..."></textarea>
+              </div>
+
+              <button type="submit" class="form-submit-btn">
+                <span>Request Formal Proposal</span>
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                  <line x1="5" y1="12" x2="19" y2="12"></line>
+                  <polyline points="12 5 19 12 12 19"></polyline>
+                </svg>
+              </button>
+
+              <div class="form-privacy-note">
+                Your ceremonial details remain strictly confidential under our private client protocol. No date is
+                confirmed until agreement signing and deposit.
+              </div>
+            </form>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- SHOWROOM DIRECTIONS & MAP STRIP -->
+    <section class="contact-map-strip" aria-label="Showroom Directions">
+      <div class="container-custom">
+        <div class="contact-map-inner">
+
+          <!-- Live Google Map embed -->
+          <div class="contact-map-frame-wrap reveal-left">
+            <iframe
+              class="contact-map-iframe"
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2483.5280248455226!2d-0.15262492342090988!3d51.50980311010564!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x487605286b08c3c1%3A0x8e9cbbf2fe4fcb34!2sMayfair%2C%20London!5e0!3m2!1sen!2suk!4v1695000000000!5m2!1sen!2suk"
+              width="100%"
+              height="340"
+              style="border:0;"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+              title="Mayfair Carriage House Location — London W1K 6LF"
+            ></iframe>
+            <div class="contact-map-badge">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                <circle cx="12" cy="10" r="3"></circle>
+              </svg>
+              Mayfair, London W1K 6LF
+            </div>
+          </div>
+
+          <div class="contact-directions-plain reveal-right">
+            <div class="section-eyebrow">Visiting The Carriage House</div>
+            <h2 class="contact-directions-heading font-serif">Arranging Your Private Viewing</h2>
+            <p class="contact-directions-text">Our carriage house is situated in a discreet private mews in central Mayfair. To ensure uncompromising privacy and undivided attention, viewings are conducted strictly by appointment only.</p>
+
+            <ul class="contact-directions-list">
+              <li>
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/>
+                </svg>
+                Monday &ndash; Saturday: 9:00 AM &ndash; 6:00 PM
+              </li>
+              <li>
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/>
+                </svg>
+                Private Gated Mews &bull; Valet Parking Provided
+              </li>
+              <li>
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/>
+                </svg>
+                By Appointment Only &mdash; +44 20 7946 0912
+              </li>
+            </ul>
+
+            <a href="#bookingInquiryForm" class="btn-gold-primary">Schedule Showroom Appointment
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                <line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/>
+              </svg>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FREQUENTLY ASKED QUESTIONS SECTION -->
+    <section class="contact-faq-section" aria-label="Frequently Asked Questions">
+      <div class="container-custom">
+        <div class="contact-faq-header reveal-up">
+          <div class="section-eyebrow">Frequently Answered Questions</div>
+          <h2 class="contact-faq-title font-serif">Ceremonial Rental Details</h2>
+        </div>
+
+        <div class="faq-accordion-list reveal-up">
+
+          <div class="faq-accordion-item">
+            <button type="button" class="faq-accordion-trigger" aria-expanded="true">
+              <span>How far in advance should we secure our wedding car?</span>
+              <svg class="faq-accordion-icon" viewBox="0 0 24 24">
+                <polyline points="6 9 12 15 18 9"></polyline>
+              </svg>
+            </button>
+            <div class="faq-accordion-body is-open">
+              <div class="faq-accordion-content">
+                Due to the rarity and high demand for our authentic 1950s and 1960s flagship motorcars, we advise
+                booking 9 to 18 months ahead, particularly for peak weekend dates between May and October.
+              </div>
+            </div>
+          </div>
+
+          <div class="faq-accordion-item">
+            <button type="button" class="faq-accordion-trigger" aria-expanded="false">
+              <span>What is your contingency plan if mechanical issues occur?</span>
+              <svg class="faq-accordion-icon" viewBox="0 0 24 24">
+                <polyline points="6 9 12 15 18 9"></polyline>
+              </svg>
+            </button>
+            <div class="faq-accordion-body">
+              <div class="faq-accordion-content">
+                Every vehicle undergoes thorough pre-flight servicing before dispatch. Furthermore, an equivalent or
+                higher-grade backup carriage from our private collection is kept warmed and on standby at all times
+                during your rental window.
+              </div>
+            </div>
+          </div>
+
+          <div class="faq-accordion-item">
+            <button type="button" class="faq-accordion-trigger" aria-expanded="false">
+              <span>Are silk ribbons, chauffeur attire, and champagne included?</span>
+              <svg class="faq-accordion-icon" viewBox="0 0 24 24">
+                <polyline points="6 9 12 15 18 9"></polyline>
+              </svg>
+            </button>
+            <div class="faq-accordion-body">
+              <div class="faq-accordion-content">
+                Yes. All our bespoke packages include a fully uniformed master chauffeur, hand-tied satin ribbons in
+                your chosen wedding color tone, and a chilled bottle of French champagne with lead crystal flutes for
+                the newlyweds.
+              </div>
+            </div>
+          </div>
+
+          <div class="faq-accordion-item">
+            <button type="button" class="faq-accordion-trigger" aria-expanded="false">
+              <span>What happens if the wedding ceremony runs over schedule?</span>
+              <svg class="faq-accordion-icon" viewBox="0 0 24 24">
+                <polyline points="6 9 12 15 18 9"></polyline>
+              </svg>
+            </button>
+            <div class="faq-accordion-body">
+              <div class="faq-accordion-content">
+                Every booking includes a complimentary 45-minute grace buffer. Your chauffeur will never rush you or
+                leave. Should unforeseen venue extensions require additional hours, overtime is accommodated seamlessly.
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- SCROLL TO TOP -->
+  <button type="button" class="scroll-top-btn" id="scrollTopBtn" aria-label="Scroll to top">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor">
+      <polyline points="18 15 12 9 6 15"></polyline>
+    </svg>
+  </button>
+
+  <!-- FOOTER -->
+  <footer class="site-footer">
+    <div class="container-custom">
+      <div class="footer-top-grid">
+        <div class="footer-brand-col">
+          <div class="footer-logo-row">
+            <img src="assets/images/brand/logo.png" alt="Vintage &amp; Luxury Brand Emblem" class="footer-logo-img">
+            <div>
+              <div class="footer-brand-title">VINTAGE <span>&amp;</span> LUXURY</div>
+              <div class="footer-brand-tagline">Wedding Car Rental</div>
+            </div>
+          </div>
+          <p class="footer-desc">
+            Curating timeless moments with the world's most distinguished vintage and prestige wedding motorcars.
+            Bespoke white-glove chauffeuring for your wedding celebration.
+          </p>
+        </div>
+        <div>
+          <h4 class="footer-col-title">Explore</h4>
+          <ul class="footer-links-list">
+            <li><a href="index.html">Home — Royal Classic</a></li>
+            <li><a href="home-2.html">Home — Grand Estate</a></li>
+            <li><a href="fleet.html">Vintage Fleet</a></li>
+            <li><a href="services.html">Wedding Packages</a></li>
+            <li><a href="about.html">Our Heritage</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="footer-col-title">Services</h4>
+          <ul class="footer-links-list">
+            <li><a href="services.html">Chauffeur Escort</a></li>
+            <li><a href="services.html">Floral Dressing</a></li>
+            <li><a href="services.html">Champagne Service</a></li>
+            <li><a href="dashboard.html">Client Portal</a></li>
+            <li><a href="contact.html">Consultation</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="footer-col-title">Concierge</h4>
+          <div class="footer-contact-info">
+            <div class="footer-contact-item">
+              <svg class="footer-contact-icon" viewBox="0 0 24 24" fill="none">
+                <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                <circle cx="12" cy="10" r="3"></circle>
+              </svg>
+              <span>Mayfair Carriage Mews, London &amp; Palm Beach</span>
+            </div>
+            <div class="footer-contact-item">
+              <svg class="footer-contact-icon" viewBox="0 0 24 24" fill="none">
+                <path
+                  d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z">
+                </path>
+              </svg>
+              <span>+44 20 7946 0912</span>
+            </div>
+            <div class="footer-contact-item">
+              <svg class="footer-contact-icon" viewBox="0 0 24 24" fill="none">
+                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                <polyline points="22,6 12,13 2,6"></polyline>
+              </svg>
+              <span>concierge@vintage-luxurycars.com</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <div>&copy; 2026 Vintage &amp; Luxury Wedding Car Rental. All rights reserved.</div>
+        <div class="footer-bottom-links">
+          <a href="#">Privacy Policy</a>
+          <a href="#">Rental Agreement</a>
+          <a href="#">Terms</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="assets/js/main.js?v=3.2"></script>
+</body>
+
+</html>

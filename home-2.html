@@ -1,0 +1,709 @@
+﻿<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/images/brand/favicon-32x32.png?v=5.0">
+  <link rel="icon" type="image/png" sizes="64x64" href="assets/images/brand/favicon.png?v=5.0">
+  <link rel="shortcut icon" href="assets/images/brand/favicon.ico?v=5.0">
+  <link rel="apple-touch-icon" href="assets/images/brand/apple-touch-icon.png?v=5.0">
+  <title>Grand Estate — Vintage &amp; Luxury Wedding Car Rental</title>
+  <meta name="description"
+    content="Discover our Grand Estate collection — a curated fleet of vintage Rolls-Royce and Bentley motorcars for the most opulent wedding celebrations. Luxury packages, bespoke floral dressing, and white-glove chauffeur service.">
+  <link rel="stylesheet" href="assets/css/style.css?v=3.3">
+  <link rel="stylesheet" href="assets/css/responsive.css?v=3.1">
+</head>
+
+<body>
+
+  <!-- PAGE LOADER -->
+  <div class="page-loader" id="pageLoader">
+    <div class="loader-brand-box">
+      <img src="assets/images/brand/logo.png" alt="Vintage &amp; Luxury Emblem" class="loader-logo-img">
+      <div class="loader-title">Grand Estate</div>
+      <div class="loader-bar-wrap">
+        <div class="loader-progress"></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- HEADER -->
+  <header class="site-header" id="siteHeader">
+    <div class="container-custom header-inner">
+      <a href="index.html" class="header-brand" aria-label="Vintage &amp; Luxury Wedding Car Rental">
+        <div class="brand-logo-wrap">
+          <img src="assets/images/brand/logo.png" alt="Brand Emblem" class="brand-logo-img">
+        </div>
+        <div class="brand-text-block">
+          <span class="brand-title">VINTAGE <span>&amp;</span> LUXURY</span>
+          <span class="brand-tagline">Wedding Car Rental</span>
+        </div>
+      </a>
+      <nav class="desktop-nav" aria-label="Primary Navigation">
+        <ul class="nav-list">
+          <li class="nav-item nav-dropdown" id="navDropdownHome">
+            <button type="button" class="nav-link active" id="homeDropdownBtn" aria-expanded="false"
+              aria-haspopup="true">
+              Home
+              <svg class="dropdown-arrow-icon" viewBox="0 0 24 24" fill="none">
+                <polyline points="6 9 12 15 18 9"></polyline>
+              </svg>
+            </button>
+            <div class="dropdown-menu">
+              <a href="index.html" class="dropdown-item">Home 1 — Royal Classic <span
+                  class="dropdown-badge">Default</span></a>
+              <a href="home-2.html" class="dropdown-item active">Home 2 — Grand Estate <span
+                  class="dropdown-badge">Current</span></a>
+            </div>
+          </li>
+          <li class="nav-item"><a href="fleet.html" class="nav-link">Fleet</a></li>
+          <li class="nav-item"><a href="services.html" class="nav-link">Services</a></li>
+          <li class="nav-item"><a href="about.html" class="nav-link">About</a></li>
+          <li class="nav-item"><a href="dashboard.html" class="nav-link">Dashboard</a></li>
+          <li class="nav-item"><a href="contact.html" class="nav-link">Contact</a></li>
+        </ul>
+      </nav>
+      <div class="header-actions">
+        <button type="button" class="control-pill-btn rtl-toggle-btn" aria-label="Switch Direction">
+          <svg class="control-icon" viewBox="0 0 24 24">
+            <polyline points="16 3 21 3 21 8"></polyline>
+            <line x1="4" y1="20" x2="21" y2="3"></line>
+            <polyline points="21 16 21 21 16 21"></polyline>
+            <line x1="15" y1="15" x2="21" y2="21"></line>
+            <line x1="4" y1="4" x2="9" y2="9"></line>
+          </svg>
+          <span class="rtl-text">RTL</span>
+        </button>
+        <button type="button" class="control-pill-btn theme-toggle-btn" aria-label="Switch Theme">
+          <span class="theme-icon-wrap">
+            <svg class="control-icon" viewBox="0 0 24 24">
+              <circle cx="12" cy="12" r="5"></circle>
+              <line x1="12" y1="1" x2="12" y2="3"></line>
+              <line x1="12" y1="21" x2="12" y2="23"></line>
+              <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+              <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+              <line x1="1" y1="12" x2="3" y2="12"></line>
+              <line x1="21" y1="12" x2="23" y2="12"></line>
+              <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+              <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+            </svg>
+          </span>
+          <span class="theme-text">Light</span>
+        </button>
+        <a href="login.html" class="btn-login-header">
+          <svg viewBox="0 0 24 24" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/>
+            <circle cx="12" cy="7" r="4"/>
+          </svg>
+          Login
+        </a>
+        <button type="button" class="mobile-toggle-btn" id="mobileMenuBtn" aria-label="Open Menu">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <line x1="3" y1="6" x2="21" y2="6"></line>
+            <line x1="3" y1="12" x2="21" y2="12"></line>
+            <line x1="3" y1="18" x2="21" y2="18"></line>
+          </svg>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- MOBILE DRAWER -->
+  <div class="mobile-drawer-overlay" id="mobileDrawerOverlay"></div>
+  <aside class="mobile-drawer" id="mobileDrawer" aria-label="Mobile Navigation">
+    <div class="mobile-drawer-header">
+      <a href="index.html" class="header-brand" aria-label="Vintage &amp; Luxury Wedding Car Rental">
+        <div class="brand-logo-wrap"><img src="assets/images/brand/logo.png" alt="Emblem" class="brand-logo-img"></div>
+        <div class="brand-text-block">
+          <span class="brand-title">VINTAGE <span>&amp;</span> LUXURY</span>
+          <span class="brand-tagline">Wedding Car Rental</span>
+        </div>
+      </a>
+      <button type="button" class="mobile-close-btn" id="mobileCloseBtn" aria-label="Close Menu">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <line x1="18" y1="6" x2="6" y2="18"></line>
+          <line x1="6" y1="6" x2="18" y2="18"></line>
+        </svg>
+      </button>
+    </div>
+    <ul class="mobile-nav-list">
+      <li class="mobile-accordion-item" id="mobileHomeAccordion">
+        <button type="button" class="mobile-accordion-btn active" id="mobileHomeAccordionBtn" aria-expanded="false">
+          <span>Home</span>
+          <svg class="dropdown-arrow-icon" viewBox="0 0 24 24" fill="none">
+            <polyline points="6 9 12 15 18 9"></polyline>
+          </svg>
+        </button>
+        <div class="mobile-accordion-content">
+          <a href="index.html" class="mobile-sub-link">Home 1 — Royal Classic</a>
+          <a href="home-2.html" class="mobile-sub-link active">Home 2 — Grand Estate</a>
+        </div>
+      </li>
+      <li><a href="fleet.html" class="mobile-nav-link">Fleet</a></li>
+      <li><a href="services.html" class="mobile-nav-link">Services</a></li>
+      <li><a href="about.html" class="mobile-nav-link">About</a></li>
+      <li><a href="dashboard.html" class="mobile-nav-link">Dashboard</a></li>
+      <li><a href="contact.html" class="mobile-nav-link">Contact</a></li>
+    </ul>
+    <div class="mobile-controls-wrap">
+      <div class="mobile-controls-row">
+        <button type="button" class="control-pill-btn rtl-toggle-btn control-pill-flex" aria-label="Switch Direction">
+          <svg class="control-icon" viewBox="0 0 24 24" width="14" height="14">
+            <polyline points="16 3 21 3 21 8"></polyline>
+            <line x1="4" y1="20" x2="21" y2="3"></line>
+            <polyline points="21 16 21 21 16 21"></polyline>
+            <line x1="15" y1="15" x2="21" y2="21"></line>
+            <line x1="4" y1="4" x2="9" y2="9"></line>
+          </svg>
+          <span class="rtl-text">RTL</span>
+        </button>
+        <button type="button" class="control-pill-btn theme-toggle-btn control-pill-flex" aria-label="Switch Theme">
+          <span class="theme-icon-wrap">
+            <svg class="control-icon" viewBox="0 0 24 24" width="14" height="14">
+              <circle cx="12" cy="12" r="5"></circle>
+              <line x1="12" y1="1" x2="12" y2="3"></line>
+              <line x1="12" y1="21" x2="12" y2="23"></line>
+              <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+              <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+              <line x1="1" y1="12" x2="3" y2="12"></line>
+              <line x1="21" y1="12" x2="23" y2="12"></line>
+              <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+              <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+            </svg>
+          </span>
+          <span class="theme-text">Light</span>
+        </button>
+      </div>
+      <a href="login.html" class="btn-gold-primary mobile-cta-full">Login</a>
+    </div>
+  </aside>
+
+  <main id="mainContent">
+
+    <!-- =====================================================================
+         SECTION 1: LAYERED LUXURY EDITORIAL HERO
+         ===================================================================== -->
+    <section class="h2-hero-section" aria-label="Grand Estate Welcome">
+      <div class="container-custom">
+        <div class="h2-hero-grid">
+
+          <!-- Left: Grand Typography & Action Layer -->
+          <div class="h2-hero-content reveal-left">
+            <div class="h2-hero-eyebrow">
+              <span class="h2-eyebrow-dash"></span>
+              <span>Grand Estate Collection &bull; 2026</span>
+            </div>
+
+            <h1 class="h2-hero-heading">
+              Where <span class="gold-word">Legend</span><br>
+              Meets the<br>
+              Wedding Day
+            </h1>
+
+            <p class="h2-hero-body">
+              Twelve of the most iconic motorcars of the post-war golden era, preserved to museum standards and
+              reserved exclusively for wedding celebrations. White-glove chauffeur protocol, bespoke floral dressings,
+              and timeless presence.
+            </p>
+
+            <!-- Dual Equal Action Buttons -->
+            <div class="h2-hero-actions">
+              <a href="login.html" class="btn-gold-primary">
+                Reserve Your Fleet
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                  <line x1="5" y1="12" x2="19" y2="12"></line>
+                  <polyline points="12 5 19 12 12 19"></polyline>
+                </svg>
+              </a>
+              <a href="fleet.html" class="btn-outline-gold">Explore Collection</a>
+            </div>
+
+            <!-- Trust / Heritage Feature Badges -->
+            <div class="h2-hero-badges-row">
+              <div class="h2-badge-pill">
+                <span class="h2-badge-dot"></span>
+                <span class="h2-badge-text">35+ Yrs Heritage</span>
+              </div>
+              <div class="h2-badge-pill">
+                <span class="h2-badge-dot"></span>
+                <span class="h2-badge-text">12 Rare Motorcars</span>
+              </div>
+              <div class="h2-badge-pill">
+                <span class="h2-badge-dot"></span>
+                <span class="h2-badge-text">Savile Row Livery</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Right: Framed Luxury Car Showcase with Floating Badges -->
+          <div class="h2-hero-showcase reveal-right">
+            <div class="h2-showcase-frame">
+              <div class="h2-showcase-img-wrap">
+                <img src="assets/images/hero/hero-rolls-noir-cobblestone-night.jpg"
+                  alt="Vintage Rolls-Royce Silver Cloud II in moody noir atmosphere on wet golden cobblestone street at night"
+                  class="h2-showcase-img" loading="eager">
+                <div class="h2-showcase-gradient-overlay" aria-hidden="true"></div>
+              </div>
+
+              <!-- Floating Top Badge -->
+              <div class="h2-floating-badge-top">
+                <span class="h2-badge-pulse-dot"></span>
+                <span>Flagship Motorcar &bull; 1961</span>
+              </div>
+
+              <!-- Floating Bottom Spec Card -->
+              <div class="h2-floating-spec-card">
+                <div class="h2-spec-header">
+                  <div class="h2-spec-title">Rolls-Royce Silver Cloud II</div>
+                  <span class="h2-spec-status">Available</span>
+                </div>
+                <div class="h2-spec-meta">
+                  <span>Midnight Sable</span>
+                  <span class="h2-spec-sep">&bull;</span>
+                  <span>Connolly Cream Hide</span>
+                  <span class="h2-spec-sep">&bull;</span>
+                  <span>V8 Coachwork</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- =====================================================================
+         SECTION 2: PANORAMIC 5-IMAGE GALLERY MOSAIC
+         Dense image-rich horizontal strip — completely different from any Home 1 layout
+         ===================================================================== -->
+    <section class="h2-gallery-section" aria-label="Wedding Gallery">
+      <div class="container-custom">
+        <div class="h2-gallery-header reveal-up">
+          <div>
+            <span class="section-eyebrow">A Life in Photographs</span>
+            <h2 class="h2-gallery-title">Captured Moments</h2>
+          </div>
+          <span class="h2-gallery-count">12 Motorcars &mdash; 1,800+ Weddings</span>
+        </div>
+
+        <div class="h2-gallery-mosaic reveal-up" style="transition-delay:0.1s;">
+          <!-- Cell 1: Large — Aerial castle procession -->
+          <div class="h2-gallery-cell">
+            <img src="assets/images/gallery/castle-procession-aerial.jpg"
+              alt="Aerial view of three vintage Rolls-Royce wedding car procession through Scottish castle gates"
+              class="h2-gallery-img" loading="lazy">
+            <span class="h2-gallery-label">Highland Castle</span>
+          </div>
+
+
+          <!-- Cell 3: Medium landscape -->
+          <div class="h2-gallery-cell">
+            <img src="assets/images/gallery/phantom-spotlight-gold.jpg"
+              alt="1950s Rolls-Royce Phantom V in golden spotlight on black background" class="h2-gallery-img"
+              loading="lazy">
+            <span class="h2-gallery-label">Phantom V</span>
+          </div>
+
+          <!-- Cell 4: Detail -->
+          <div class="h2-gallery-cell">
+            <img src="assets/images/gallery/floral-bonnet-detail.jpg"
+              alt="White roses and eucalyptus floral arrangement on polished black Rolls-Royce bonnet"
+              class="h2-gallery-img" loading="lazy">
+            <span class="h2-gallery-label">Floral Artistry</span>
+          </div>
+
+          <!-- Cell 5: Reception evening -->
+          <div class="h2-gallery-cell">
+            <img src="assets/images/sections/reception-arrival-evening.jpg"
+              alt="Bride and groom arriving at evening reception, vintage Rolls-Royce in foreground"
+              class="h2-gallery-img" loading="lazy">
+            <span class="h2-gallery-label">Grand Reception</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =====================================================================
+         SECTION 3: VEHICLE SPOTLIGHT — Studio-lit phantom on black, overlaid text
+         Different: Dark full-bleed studio image, not a landscape/estate shot
+         ===================================================================== -->
+    <section class="h2-spotlight-section" aria-label="Featured Vehicle">
+      <img src="assets/images/gallery/phantom-spotlight-gold.jpg"
+        alt="Rolls-Royce Phantom V illuminated by golden spotlight in dramatic studio setting" class="h2-spotlight-img"
+        loading="lazy">
+      <div class="h2-spotlight-content">
+        <div class="container-custom">
+          <div class="h2-spotlight-inner reveal-left">
+            <div class="h2-spotlight-super">Vehicle of the Season</div>
+            <h2 class="h2-spotlight-heading">
+              The PhantomV<br><em>Reimagined</em>
+            </h2>
+            <p class="h2-spotlight-desc">
+              Our 1962 Rolls-Royce Phantom V — perhaps the most celebrated motorcar in our collection. Hand-finished in
+              Midnight Sable with 22-carat gold-plated Spirit of Ecstasy and original Connolly hide, this is the vehicle
+              reserved for those who understand that truly extraordinary moments require no compromise.
+            </p>
+            <div class="h2-spotlight-specs">
+              <div class="h2-spec-item">
+                <div class="h2-spec-label">Year</div>
+                <div class="h2-spec-value">1962</div>
+              </div>
+              <div class="h2-spec-item">
+                <div class="h2-spec-label">Engine</div>
+                <div class="h2-spec-value">6.2L V8</div>
+              </div>
+              <div class="h2-spec-item">
+                <div class="h2-spec-label">Coachwork</div>
+                <div class="h2-spec-value">Midnight Sable</div>
+              </div>
+              <div class="h2-spec-item">
+                <div class="h2-spec-label">Restoration</div>
+                <div class="h2-spec-value">Concours</div>
+              </div>
+            </div>
+            <div class="h2-finale-actions">
+              <a href="fleet.html" class="btn-gold-primary hero-cta-btn">
+                Full Vehicle Details
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                  <line x1="5" y1="12" x2="19" y2="12"></line>
+                  <polyline points="12 5 19 12 12 19"></polyline>
+                </svg>
+              </a>
+              <a href="contact.html" class="btn-outline-gold">Check Availability</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =====================================================================
+         SECTION 4: 3-COLUMN EDITORIAL WITH OFFSET IMAGES
+         Dense image + text — completely different from any previous section
+         ===================================================================== -->
+    <section class="h2-editorial-section" aria-label="Our Story in Images">
+      <div class="container-custom">
+        <!-- 3 tall editorial columns with staggered images -->
+        <div class="h2-editorial-grid">
+          <!-- Column 1 -->
+          <div class="h2-editorial-col reveal-up">
+            <div class="h2-editorial-img-tall">
+              <img src="assets/images/gallery/p2.jpg"
+                alt="Vintage wedding car procession through castle gates from above" loading="lazy">
+            </div>
+            <div class="h2-editorial-col-label">Bespoke Chauffeur</div>
+            <h3 class="h2-editorial-col-heading">Arriving in Absolute Grandeur</h3>
+            <p class="h2-editorial-col-text">Every arrival is staged as a cinematic moment. Your chauffeur coordinates
+              with your photographer to ensure the perfect approach, the perfect light, the perfect frame.</p>
+          </div>
+
+          <!-- Column 2 -->
+          <div class="h2-editorial-col reveal-up" style="transition-delay:0.12s;">
+            <div class="h2-editorial-img-tall">
+              <img src="assets/images/gallery/p3.jpg"
+                alt="Bridal floral arrangement of white roses and eucalyptus on vintage car bonnet" loading="lazy">
+            </div>
+            <div class="h2-editorial-col-label">Floral Artisanry</div>
+            <h3 class="h2-editorial-col-heading">Flowers That Tell Your Story</h3>
+            <p class="h2-editorial-col-text">Our in-house floral artisan crafts arrangements matched precisely to your
+              bridal bouquet, venue palette, and seasonal availability. No two dressings are ever identical.</p>
+          </div>
+
+          <!-- Column 3 -->
+          <div class="h2-editorial-col reveal-up" style="transition-delay:0.24s;">
+            <div class="h2-editorial-img-tall">
+              <img src="assets/images/gallery/p4.jpg"
+                alt="Bride in ivory gown between two vintage black Rolls-Royce cars" loading="lazy">
+            </div>
+            <div class="h2-editorial-col-label">Iconic Photography</div>
+            <h3 class="h2-editorial-col-heading">Backdrops Worth Every Frame</h3>
+            <p class="h2-editorial-col-text">The glossy coachwork of a vintage Rolls-Royce is the most magnificent
+              natural backdrop for wedding photography. Every reflection is a masterpiece in itself.</p>
+          </div>
+        </div>
+
+        <!-- Bottom editorial CTA row -->
+        <div class="h2-editorial-bottom reveal-up">
+          <div>
+            <h2 class="h2-editorial-cta-heading">The Most Important <em>Detail</em> of Your Day</h2>
+          </div>
+          <div>
+            <p class="h2-editorial-cta-text">
+              When every other detail of a wedding has been considered, the motorcar is often the element that unites
+              everything into a single, unforgettable visual narrative. It is the moment your guests will remember
+              longest and your photographs will treasure forever.
+            </p>
+            <div style="display:flex;gap:1.15rem;flex-wrap:wrap;align-items:center;">
+              <a href="about.html" class="btn-gold-primary">Our Heritage</a>
+              <a href="fleet.html" class="btn-outline-gold">The Full Fleet</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =====================================================================
+         SECTION 5: WEDDING PACKAGES — 3-tier horizontal package comparison
+         Different: Pricing-focused layout — nothing like this exists in Home 1
+         ===================================================================== -->
+    <section class="h2-packages-section" aria-label="Wedding Packages">
+      <div class="container-custom">
+        <div class="h2-packages-header reveal-up">
+          <span class="section-eyebrow-line">
+            <span class="section-eyebrow" style="margin-bottom:0;">Curated Packages</span>
+          </span>
+          <h2 class="h2-packages-title">Choose Your Wedding Experience</h2>
+        </div>
+
+        <div class="h2-packages-row">
+          <!-- Package 1: Classic -->
+          <div class="h2-package-card reveal-up">
+            <div class="h2-package-tier">Classic</div>
+            <div class="h2-package-name">The Classic Escort</div>
+            <div class="h2-package-tagline">Timeless elegance for the ceremony journey — perfectly presented and
+              punctually delivered.</div>
+            <ul class="h2-package-features">
+              <li class="h2-package-feature">
+                <svg class="h2-feature-check" viewBox="0 0 24 24">
+                  <polyline points="20 6 9 17 4 12"></polyline>
+                </svg>
+                One vintage motorcar of your selection
+              </li>
+              <li class="h2-package-feature">
+                <svg class="h2-feature-check" viewBox="0 0 24 24">
+                  <polyline points="20 6 9 17 4 12"></polyline>
+                </svg>
+                Master Chauffeur in formal livery
+              </li>
+              <li class="h2-package-feature">
+                <svg class="h2-feature-check" viewBox="0 0 24 24">
+                  <polyline points="20 6 9 17 4 12"></polyline>
+                </svg>
+                Standard white ribbon dressing
+              </li>
+              <li class="h2-package-feature">
+                <svg class="h2-feature-check" viewBox="0 0 24 24">
+                  <polyline points="20 6 9 17 4 12"></polyline>
+                </svg>
+                Ceremony-to-reception transfer
+              </li>
+              <li class="h2-package-feature">
+                <svg class="h2-feature-check" viewBox="0 0 24 24">
+                  <polyline points="20 6 9 17 4 12"></polyline>
+                </svg>
+                1 hour hire
+              </li>
+            </ul>
+            <a href="contact.html" class="h2-package-cta">Enquire Now</a>
+          </div>
+
+          <!-- Package 2: Prestige (FEATURED) -->
+          <div class="h2-package-card h2-package-card--featured reveal-up" style="transition-delay:0.1s;">
+            <div class="h2-package-crown">Most Requested</div>
+            <div class="h2-package-tier">Prestige</div>
+            <div class="h2-package-name">The Grand Prestige</div>
+            <div class="h2-package-tagline">The complete white-glove experience — from bridal home to grand reception.
+            </div>
+            <ul class="h2-package-features">
+              <li class="h2-package-feature">
+                <svg class="h2-feature-check" viewBox="0 0 24 24">
+                  <polyline points="20 6 9 17 4 12"></polyline>
+                </svg>
+                Two vintage motorcars of your selection
+              </li>
+              <li class="h2-package-feature">
+                <svg class="h2-feature-check" viewBox="0 0 24 24">
+                  <polyline points="20 6 9 17 4 12"></polyline>
+                </svg>
+                Two Master Chauffeurs in matched livery
+              </li>
+              <li class="h2-package-feature">
+                <svg class="h2-feature-check" viewBox="0 0 24 24">
+                  <polyline points="20 6 9 17 4 12"></polyline>
+                </svg>
+                Bespoke floral dressing by our artisan
+              </li>
+              <li class="h2-package-feature">
+                <svg class="h2-feature-check" viewBox="0 0 24 24">
+                  <polyline points="20 6 9 17 4 12"></polyline>
+                </svg>
+                Champagne &amp; crystal flute service
+              </li>
+              <li class="h2-package-feature">
+                <svg class="h2-feature-check" viewBox="0 0 24 24">
+                  <polyline points="20 6 9 17 4 12"></polyline>
+                </svg>
+                Full day hire — up to 8 hours
+              </li>
+            </ul>
+            <a href="contact.html" class="h2-package-cta">Reserve Now</a>
+          </div>
+
+          <!-- Package 3: Royal -->
+          <div class="h2-package-card reveal-up" style="transition-delay:0.2s;">
+            <div class="h2-package-tier">Royal</div>
+            <div class="h2-package-name">The Royal Command</div>
+            <div class="h2-package-tagline">An entire royal motorcade — for weddings that demand nothing less than
+              legendary.</div>
+            <ul class="h2-package-features">
+              <li class="h2-package-feature">
+                <svg class="h2-feature-check" viewBox="0 0 24 24">
+                  <polyline points="20 6 9 17 4 12"></polyline>
+                </svg>
+                Three to five motorcars — full procession
+              </li>
+              <li class="h2-package-feature">
+                <svg class="h2-feature-check" viewBox="0 0 24 24">
+                  <polyline points="20 6 9 17 4 12"></polyline>
+                </svg>
+                Dedicated Fleet Director &amp; concierge
+              </li>
+              <li class="h2-package-feature">
+                <svg class="h2-feature-check" viewBox="0 0 24 24">
+                  <polyline points="20 6 9 17 4 12"></polyline>
+                </svg>
+                Bespoke floral programme for entire fleet
+              </li>
+              <li class="h2-package-feature">
+                <svg class="h2-feature-check" viewBox="0 0 24 24">
+                  <polyline points="20 6 9 17 4 12"></polyline>
+                </svg>
+                Grand Cru champagne &amp; crystal service
+              </li>
+              <li class="h2-package-feature">
+                <svg class="h2-feature-check" viewBox="0 0 24 24">
+                  <polyline points="20 6 9 17 4 12"></polyline>
+                </svg>
+                Unlimited hire — bespoke schedule
+              </li>
+            </ul>
+            <a href="contact.html" class="h2-package-cta">Private Consultation</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =====================================================================
+         SECTION 6: GRAND FINALE CTA — Full-bleed evening reception image with CTA
+         Different: Warm lit estate evening, not dark nor golden-hour
+         ===================================================================== -->
+    <section class="h2-finale-section" aria-label="Book Your Wedding Car">
+      <img src="assets/images/sections/reception-arrival-evening.jpg"
+        alt="Bride and groom walking to lit reception venue at dusk, vintage Rolls-Royce in foreground"
+        class="h2-finale-img" loading="lazy">
+      <div class="h2-finale-overlay" aria-hidden="true"></div>
+      <div class="h2-finale-content">
+        <div class="container-custom">
+          <div class="h2-finale-inner reveal-left">
+            <span class="section-eyebrow">Secure Your Date</span>
+            <h2 class="h2-finale-heading">
+              The Evening Begins<br>With a <em>Perfect Entrance</em>
+            </h2>
+            <p class="h2-finale-text">
+              Your guests will applaud. Your photographer will capture the moment of a lifetime. Your chauffeur will
+              step forward with white-gloved precision. All that is required of you is to smile.
+            </p>
+            <div class="h2-finale-actions">
+              <a href="contact.html" class="btn-gold-primary hero-cta-btn">
+                Reserve Your Fleet
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                  <line x1="5" y1="12" x2="19" y2="12"></line>
+                  <polyline points="12 5 19 12 12 19"></polyline>
+                </svg>
+              </a>
+              <a href="fleet.html" class="btn-outline-gold">Browse All Vehicles</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- SCROLL TO TOP -->
+  <button type="button" class="scroll-top-btn" id="scrollTopBtn" aria-label="Scroll to top">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor">
+      <polyline points="18 15 12 9 6 15"></polyline>
+    </svg>
+  </button>
+
+  <!-- FOOTER -->
+  <footer class="site-footer">
+    <div class="container-custom">
+      <div class="footer-top-grid">
+        <div class="footer-brand-col">
+          <div class="footer-logo-row">
+            <img src="assets/images/brand/logo.png" alt="Vintage &amp; Luxury Brand Emblem" class="footer-logo-img">
+            <div>
+              <div class="footer-brand-title">VINTAGE <span>&amp;</span> LUXURY</div>
+              <div class="footer-brand-tagline">Wedding Car Rental</div>
+            </div>
+          </div>
+          <p class="footer-desc">
+            Curating timeless moments with the world's most distinguished vintage and prestige wedding motorcars.
+            Bespoke white-glove chauffeuring for your wedding celebration.
+          </p>
+        </div>
+        <div>
+          <h4 class="footer-col-title">Explore</h4>
+          <ul class="footer-links-list">
+            <li><a href="index.html">Home — Royal Classic</a></li>
+            <li><a href="home-2.html">Home — Grand Estate</a></li>
+            <li><a href="fleet.html">Vintage Fleet</a></li>
+            <li><a href="services.html">Wedding Packages</a></li>
+            <li><a href="about.html">Our Heritage</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="footer-col-title">Packages</h4>
+          <ul class="footer-links-list">
+            <li><a href="home-2.html#packages">Classic Escort</a></li>
+            <li><a href="home-2.html#packages">Grand Prestige</a></li>
+            <li><a href="home-2.html#packages">Royal Command</a></li>
+            <li><a href="dashboard.html">Client Portal</a></li>
+            <li><a href="contact.html">Consultation</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="footer-col-title">Concierge</h4>
+          <div class="footer-contact-info">
+            <div class="footer-contact-item">
+              <svg class="footer-contact-icon" viewBox="0 0 24 24" fill="none">
+                <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                <circle cx="12" cy="10" r="3"></circle>
+              </svg>
+              <span>Mayfair Carriage Mews, London &amp; Palm Beach</span>
+            </div>
+            <div class="footer-contact-item">
+              <svg class="footer-contact-icon" viewBox="0 0 24 24" fill="none">
+                <path
+                  d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z">
+                </path>
+              </svg>
+              <span>+44 20 7946 0912</span>
+            </div>
+            <div class="footer-contact-item">
+              <svg class="footer-contact-icon" viewBox="0 0 24 24" fill="none">
+                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                <polyline points="22,6 12,13 2,6"></polyline>
+              </svg>
+              <span>concierge@vintage-luxurycars.com</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <div>&copy; 2026 Vintage &amp; Luxury Wedding Car Rental. All rights reserved.</div>
+        <div class="footer-bottom-links">
+          <a href="#">Privacy Policy</a>
+          <a href="#">Rental Agreement</a>
+          <a href="#">Terms</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="assets/js/main.js?v=3.1"></script>
+</body>
+
+</html>
