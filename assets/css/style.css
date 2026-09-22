@@ -6123,10 +6123,21 @@ input[type="date"]#weddingDate::-webkit-calendar-picker-indicator:hover {
     overflow-y: auto;
   }
 
+  /* Fix header so it doesn't scroll on mobile */
+  .db-header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    z-index: 100;
+  }
+
   .db-layout {
     height: auto;
     overflow: visible;
     flex-direction: column;
+    padding-top: 72px;
   }
 
   /* Horizontal Sticky Navigation Bar under Header */
@@ -6225,6 +6236,10 @@ input[type="date"]#weddingDate::-webkit-calendar-picker-indicator:hover {
     padding: 0 1.25rem;
   }
 
+  .db-layout {
+    padding-top: 66px;
+  }
+
   .db-sidebar {
     top: 66px;
   }
@@ -6292,6 +6307,10 @@ input[type="date"]#weddingDate::-webkit-calendar-picker-indicator:hover {
   .db-header {
     height: 60px;
     padding: 0 0.85rem;
+  }
+
+  .db-layout {
+    padding-top: 60px;
   }
 
   .db-sidebar {
@@ -6607,6 +6626,10 @@ input[type="date"]#weddingDate::-webkit-calendar-picker-indicator:hover {
   .db-header {
     height: 56px;
     padding: 0 0.65rem;
+  }
+
+  .db-layout {
+    padding-top: 56px;
   }
 
   .db-sidebar {
