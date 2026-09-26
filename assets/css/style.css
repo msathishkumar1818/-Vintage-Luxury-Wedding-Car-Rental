@@ -280,28 +280,30 @@ body.drawer-is-open .site-header .header-brand {
 }
 
 .brand-logo-wrap {
-  width: 30px;
-  height: 30px;
+  width: 36px;
+  height: 36px;
   display: flex;
   align-items: center;
   justify-content: center;
   border-radius: 50%;
   border: 1px solid var(--gold-border);
-  background: radial-gradient(circle, rgba(212, 175, 55, 0.15) 0%, transparent 80%);
+  background: #0d0f14;
   overflow: hidden;
-  padding: 2px;
-  transition: border-color var(--transition-fast), transform var(--transition-fast);
+  padding: 0;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.35);
+  transition: border-color var(--transition-fast), transform var(--transition-fast), box-shadow var(--transition-fast);
 }
 
 .header-brand:hover .brand-logo-wrap {
   border-color: var(--gold-light);
-  transform: scale(1.05);
+  transform: scale(1.06);
+  box-shadow: 0 0 12px rgba(212, 175, 55, 0.35);
 }
 
 .brand-logo-img {
   width: 100%;
   height: 100%;
-  object-fit: contain;
+  object-fit: cover;
 }
 
 .brand-text-block {
@@ -986,15 +988,27 @@ body.drawer-is-open .site-header .header-brand {
 }
 
 .footer-logo-row {
-  display: flex;
+  display: inline-flex;
   align-items: center;
   gap: 1rem;
+  width: fit-content;
+  text-decoration: none;
+  cursor: pointer;
+  transition: opacity var(--transition-fast, 0.2s ease), transform var(--transition-fast, 0.2s ease);
+}
+
+.footer-logo-row:hover {
+  opacity: 0.88;
+  transform: translateY(-1px);
 }
 
 .footer-logo-img {
-  width: 52px;
-  height: 52px;
-  object-fit: contain;
+  width: 54px;
+  height: 54px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 1px solid var(--gold-border);
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.4);
 }
 
 .footer-brand-title {
