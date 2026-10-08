@@ -469,5 +469,25 @@
   </div>
 
   <script src="assets/js/main.js?v=3.2"></script>
+  <script>
+    // Personalize dashboard if coming from registration or login
+    try {
+      const storedName = localStorage.getItem('fleet_user_name');
+      if (storedName && storedName.trim()) {
+        const name = storedName.trim();
+        const userNameEl = document.querySelector('.db-user-name');
+        const triggerName = document.querySelector('.db-profile-trigger-name');
+        const menuName = document.querySelector('.db-profile-menu-name');
+        if (userNameEl) userNameEl.textContent = name;
+        if (triggerName) triggerName.textContent = name;
+        if (menuName) menuName.textContent = name;
+
+        const initials = name.split(/\s+/).map(w => w[0]).filter(Boolean).slice(0, 2).join('').toUpperCase() || 'VIP';
+        document.querySelectorAll('.db-avatar, .db-profile-avatar-sm, .db-profile-menu-avatar').forEach(el => {
+          el.textContent = initials;
+        });
+      }
+    } catch(err) {}
+  </script>
 </body>
 </html>
