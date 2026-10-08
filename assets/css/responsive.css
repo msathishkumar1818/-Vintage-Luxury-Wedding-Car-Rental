@@ -35,8 +35,9 @@
   }
 
   .header-actions .btn-gold-primary,
-  .header-actions .btn-login-header {
-    display: none !important; /* Login button removed from mobile header */
+  .header-actions .btn-login-header,
+  .header-actions .header-reserve-btn {
+    display: none !important; /* Login and Reserve buttons moved to mobile drawer */
   }
 
   .header-inner {
@@ -47,6 +48,14 @@
 /* Hide header control pills on phones <= 600px (they remain accessible in mobile drawer) */
 @media (max-width: 600px) {
   .header-actions .control-pill-btn {
+    display: none !important;
+  }
+}
+
+/* In 768px, 1024px and viewports >= 601px, Dark & RTL theme icons are already in the top nav bar;
+   remove them from the hamburger menu drawer to prevent duplicate controls */
+@media (min-width: 601px) {
+  .mobile-drawer .mobile-controls-row {
     display: none !important;
   }
 }

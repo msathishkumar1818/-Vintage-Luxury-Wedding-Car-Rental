@@ -364,6 +364,9 @@
           Don't have an account?&nbsp;
           <a href="#" id="guestLink">Continue as Guest</a>
         </p>
+        <p style="text-align:center;font-size:0.75rem;color:#888;margin-top:0.65rem;">
+          Need private consultation? <a href="contact.html" style="color:var(--gold-dark);font-weight:600;text-decoration:none;">Contact Concierge</a>
+        </p>
 
       </form>
     </div>
@@ -394,7 +397,10 @@
     if(pwInput.value.length<6){fldPw.classList.add('err');ok=false;}
     if(!ok) return;
     submitBtn.classList.add('loading'); submitBtn.disabled=true;
-    setTimeout(()=>{ window.location.href='dashboard.html'; },1800);
+    const v=new URLSearchParams(window.location.search).get('vehicle');
+    setTimeout(()=>{
+      window.location.href=v?`dashboard.html?vehicle=${v}`:'dashboard.html';
+    }, 1000);
   });
   emailEl.addEventListener('input',()=>fldEmail.classList.remove('err'));
   pwInput.addEventListener('input',()=>fldPw.classList.remove('err'));
@@ -403,7 +409,7 @@
   document.getElementById('guestLink').addEventListener('click',(e)=>{
     e.preventDefault();
     const v=new URLSearchParams(window.location.search).get('vehicle');
-    window.location.href=v?`contact.html?vehicle=${v}`:'contact.html';
+    window.location.href=v?`dashboard.html?guest=true&vehicle=${v}`:'dashboard.html?guest=true';
   });
   document.querySelectorAll('.lp-logo, .rp-brand').forEach(brandEl => {
     brandEl.addEventListener('click', (e) => {
